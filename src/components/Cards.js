@@ -93,7 +93,7 @@ class Cards extends PureComponent {
                 marginBottom: -10,
               }}
             >
-              <Link to={`/topic/${this.state.tableData[i]._id}`}>
+              <Link to={`/topic/${this.state.tableData[i].slug}`}>
                 <div className="card-container">
                   <div className="img-container">
                     <img src={this.state.tableData[i].image} alt="image" />
@@ -119,7 +119,7 @@ class Cards extends PureComponent {
                 </div>
               </Link>
               <Link
-                to={`/topic/${this.state.tableData[i]._id}`}
+                to={`/topic/${this.state.tableData[i].slug}`}
                 style={{ textAlign: "end" }}
               >
                 <div

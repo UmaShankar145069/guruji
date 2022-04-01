@@ -106,7 +106,7 @@ const Topic = (props) => {
       {/* interesting topic section */}
       {relatedPost &&
         relatedPost.length > 0 &&
-        relatedPost.filter((item) => item._id != id) && (
+        relatedPost.filter((item) => item.slug != id) && (
           <div className="interest-cont">
             <h3>Topics might intrust you</h3>
             <Cards card={props.card} data={relatedPost} />

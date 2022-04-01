@@ -114,6 +114,14 @@
   border-radius: 8px;
 }
 
+/* markdown style */
+.file img {
+  display: block;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* comment section */
 
 .comment-container {

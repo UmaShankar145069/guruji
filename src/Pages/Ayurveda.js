@@ -4,6 +4,7 @@ import "./Ayurveda.css";
 
 const Ayurveda = () => {
   const [data, setData] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     loadDocsData();
@@ -64,10 +65,53 @@ const Ayurveda = () => {
           </div>
           <div className="search-container">
             <img src="./images/search.png" alt="search-icon" />
-            <input type="text" placeholder="Search Doctor Name" />
+            <input
+              type="text"
+              placeholder="Search Doctor Name"
+              onChange={(event) => {
+                setSearchTerm(event.target.value);
+              }}
+            />
           </div>
         </div>
         <div className="doc-profile-container">
+          {data
+            .filter((val) => {
+              if (searchTerm == "") {
+                return val;
+              } else if (
+                val.name.toLowerCase().includes(searchTerm.toLowerCase())
+              ) {
+                return val;
+              }
+            })
+            .map((item, index) => (
+              // card
+              <div className="card">
+                <div className="top">
+                  <div className="left">
+                    <div className="img-cont">
+                      <img src="./images/expert.png" alt="image" />
+                    </div>
+                    <div className="rating">4.5</div>
+                  </div>
+                  <div className="right">
+                    <h3>Name</h3>
+                    <div className="skills">
+                      <div>Skills</div>
+                      <div>Skills</div>
+                      <div>Skills</div>
+                    </div>
+                    <h4>English</h4>
+                  </div>
+                </div>
+                <div className="bottom">
+                  <div className="exp">Exp: 20 Yrs.</div>
+                  <button className="call-btn">Call</button>
+                </div>
+              </div>
+            ))}
+
           {/* card */}
           <div className="card">
             <div className="top">
