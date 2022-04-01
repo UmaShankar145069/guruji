@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Ayurveda.css";
 
 const Ayurveda = () => {
@@ -8,6 +9,7 @@ const Ayurveda = () => {
 
   useEffect(() => {
     loadDocsData();
+    sortArray();
   }, []);
 
   const loadDocsData = async () => {
@@ -19,7 +21,26 @@ const Ayurveda = () => {
     }
   };
 
-  const sortArray = (type) => {};
+  const sortArray = async (type) => {
+    // const types = {
+    //   popularity: "",
+    //   e_high_to_low: "",
+    //   e_low_to_high: "",
+    //   o_high_to_low: "",
+    //   o_low_to_high: "",
+    //   p_high_to_low: "",
+    //   p_low_to_high: "",
+    //   r_high_to_low: "",
+    // };
+    // const sortProperty = types[type];
+
+    const response = await axios.get("");
+    if (response.status === 200) {
+      setData(response.data);
+    } else {
+      console.log("Something went wrong");
+    }
+  };
 
   return (
     <>
@@ -33,22 +54,14 @@ const Ayurveda = () => {
               <option selected disabled>
                 Sort By :
               </option>
-              <option value="Popularity">Popularity</option>
-              <option value="Experience : High to Low">
-                Experience : High to Low
-              </option>
-              <option value="Experience : Low to High">
-                Experience : Low to High
-              </option>
-              <option value="Total orders : High to Low">
-                Total orders : High to Low
-              </option>
-              <option value="Total orders : Low to High">
-                Total orders : Low to High
-              </option>
-              <option value="Price : High to Low">Price : High to Low</option>
-              <option value="Price : Low to High">Price : Low to High</option>
-              <option value="Rating : High to Low">Rating : High to Low</option>
+              <option value="popularity">Popularit</option>
+              <option value="e_high_to_low">Experience : High to Low</option>
+              <option value="e_low_to_high">Experience : Low to High</option>
+              <option value="o_high_to_low">Total orders : High to Low</option>
+              <option value="o_low_to_high">Total orders : Low to High</option>
+              <option value="p_high_to_low">Price : High to Low</option>
+              <option value="p_low_to_high">Price : Low to High</option>
+              <option value="r_high_to_low">Rating : High to Low</option>
             </select>
           </div>
           <div className="filter-container">
@@ -133,7 +146,9 @@ const Ayurveda = () => {
             </div>
             <div className="bottom">
               <div className="exp">Exp: 20 Yrs.</div>
-              <button className="call-btn">Call</button>
+              <Link to="/ayurveda/profile">
+                <button className="call-btn">Call</button>
+              </Link>
             </div>
           </div>
           {/* card */}
