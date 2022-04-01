@@ -52,7 +52,7 @@ export const catogaryDropdown = [
   },
   {
     id: 5,
-    title: "Diabetes",
+    title: "Disease",
     path: "./",
     cName: "submenu-item",
   },

@@ -53,9 +53,9 @@ const Topic = (props) => {
         <div className="blog-detail">
           <h1>{blog && blog.title}</h1>
           <div className="blog-img">
-            <img src={astro} alt="" />
+            <img src={blog && blog.image} alt="image" />
           </div>
-          <p>{blog && blog.description}</p>
+          {/* <p>{blog && blog.description}</p> */}
           <ReactMarkdown className="file">
             {blog && blog.markdown}
           </ReactMarkdown>

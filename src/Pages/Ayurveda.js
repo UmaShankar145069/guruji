@@ -1,28 +1,72 @@
-import React from "react";
+import axios from "axios";
+import React, { useState, useEffect } from "react";
 import "./Ayurveda.css";
 
 const Ayurveda = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    loadDocsData();
+  }, []);
+
+  const loadDocsData = async () => {
+    const response = await axios.get("");
+    if (response.status === 200) {
+      setData(response.data);
+    } else {
+      console.log("Something went wrong");
+    }
+  };
+
+  const sortArray = (type) => {};
+
   return (
     <>
       <div className="ayurveda-container">
         <div className="search-filter-container">
           <div className="sort-container">
-            <select className="sorting">
-              <option>Sort By :</option>
-              <option>Popularity</option>
-              <option>Experience : High to Low</option>
-              <option>Experience : Low to High</option>
-              <option>Total orders : High to Low</option>
-              <option>Total orders : Low to High</option>
-              <option>Price : High to Low</option>
-              <option>Price : Low to High</option>
-              <option>Rating : High to Low</option>
+            <select
+              className="sorting"
+              onChange={(e) => sortArray(e.target.value)}
+            >
+              <option selected disabled>
+                Sort By :
+              </option>
+              <option value="Popularity">Popularity</option>
+              <option value="Experience : High to Low">
+                Experience : High to Low
+              </option>
+              <option value="Experience : Low to High">
+                Experience : Low to High
+              </option>
+              <option value="Total orders : High to Low">
+                Total orders : High to Low
+              </option>
+              <option value="Total orders : Low to High">
+                Total orders : Low to High
+              </option>
+              <option value="Price : High to Low">Price : High to Low</option>
+              <option value="Price : Low to High">Price : Low to High</option>
+              <option value="Rating : High to Low">Rating : High to Low</option>
             </select>
           </div>
-          <div>ki</div>
-          <div>jj</div>
+          <div className="filter-container">
+            {/* Button trigger modal */}
+            <img src="./images/filter.png" alt="filter-icon" />
+            <button
+              type="button"
+              class="btn btn-primary filter-btn"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Filter
+            </button>
+          </div>
+          <div className="search-container">
+            <img src="./images/search.png" alt="search-icon" />
+            <input type="text" placeholder="Search Doctor Name" />
+          </div>
         </div>
-        s
         <div className="doc-profile-container">
           {/* card */}
           <div className="card">

@@ -71,32 +71,11 @@ class Cards extends PureComponent {
     });
   }
 
-  // getData() {
-  //   axios
-  //     .get(
-  //       "https://3l41sc9lla.execute-api.ap-south-1.amazonaws.com/production/all"
-  //     )
-  //     .then((res) => {
-  //       const data = res.data;
-  //       console.log(res.data);
-
-  //       const slice = data.slice(
-  //         this.state.offset,
-  //         this.state.offset + this.state.perPage
-  //       );
-
-  //       this.setState({
-  //         pageCount: Math.ceil(data.length / this.state.perPage),
-  //         orgtableData: data,
-  //         tableData: data,
-  //       });
-  //     });
-  // }
-
   render() {
     return (
       <>
-        <Grid container spacing={3} sx={{ backgroundColor: "#E6F5E9" }}>
+        {/* #E6F5E9 */}
+        <Grid container spacing={1} sx={{ backgroundColor: "#E6F5E9 " }}>
           {this.state.tableData.map((tdata, i) => (
             <Grid
               key={i}
@@ -108,27 +87,31 @@ class Cards extends PureComponent {
               sx={{
                 padding: 10,
                 background: "#E6F5E9",
+                // background: "red",
+                margin: 1,
+                marginLeft: 10,
+                marginBottom: -10,
               }}
             >
-              <Link to={`/topic/${this.props.data[i]._id}`}>
+              <Link to={`/topic/${this.state.tableData[i]._id}`}>
                 <div className="card-container">
                   <div className="img-container">
-                    <img src={this.props.data[i].image} alt="image" />
+                    <img src={this.state.tableData[i].image} alt="image" />
                   </div>
                   <div className="text-container">
                     <div className="top">
                       <span>
                         Date:
                         {new Date(
-                          this.state.orgtableData[i].createdAt
+                          this.state.tableData[i].createdAt
                         ).toLocaleDateString()}
                       </span>
-                      <span>{this.props.data[i].category}</span>
+                      <span>{this.state.tableData[i].category}</span>
                     </div>
                     <div className="bottom">
-                      <h4>{this.props.data[i].title}</h4>
+                      <h4>{this.state.tableData[i].title}</h4>
                       <p>
-                        {this.props.data[i].description.substring(0, 50)}
+                        {this.state.tableData[i].description.substring(0, 50)}
                         ...
                       </p>
                     </div>
@@ -136,7 +119,7 @@ class Cards extends PureComponent {
                 </div>
               </Link>
               <Link
-                to={`/topic/${this.props.data[i]._id}`}
+                to={`/topic/${this.state.tableData[i]._id}`}
                 style={{ textAlign: "end" }}
               >
                 <div
@@ -145,7 +128,7 @@ class Cards extends PureComponent {
                     marginTop: -15,
                     width: 91,
                     textAlign: "center",
-                    marginLeft: 200,
+                    marginLeft: 280,
                     padding: "6px 10px",
                     color: "rgba(0, 0, 0, 0.7)",
                     fontWeight: 600,

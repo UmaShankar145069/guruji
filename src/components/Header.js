@@ -71,40 +71,40 @@ const Header = () => {
               Blogs
             </Button>
           </NavLink>
-          <NavLink to="/about">
-            <Button
-              className="head-btn"
-              id="about-btn"
-              sx={{
-                color: "white",
-                textTransform: "capitalize",
-                fontSize: "1.2rem",
-                marginLeft: 2,
-                borderRadius: 10,
-                padding: 0,
-                textDecoration: "none",
-              }}
-            >
-              About Us
-            </Button>
-          </NavLink>
-          <NavLink to="/ayurveda">
-            <Button
-              className="head-btn"
-              id="contact-btn"
-              sx={{
-                color: "white",
-                textTransform: "capitalize",
-                fontSize: "1.2rem",
-                marginLeft: 2,
-                borderRadius: 10,
-                padding: 0,
-                textDecoration: "none",
-              }}
-            >
-              Ayurveda
-            </Button>
-          </NavLink>
+          {/* <NavLink to="/about"> */}
+          <Button
+            className="head-btn"
+            id="about-btn"
+            sx={{
+              color: "white",
+              textTransform: "capitalize",
+              fontSize: "1.2rem",
+              marginLeft: 2,
+              borderRadius: 10,
+              padding: 0,
+              textDecoration: "none",
+            }}
+          >
+            About Us
+          </Button>
+          {/* </NavLink> */}
+          {/* <NavLink to="/ayurveda"> */}
+          <Button
+            className="head-btn"
+            id="contact-btn"
+            sx={{
+              color: "white",
+              textTransform: "capitalize",
+              fontSize: "1.2rem",
+              marginLeft: 2,
+              borderRadius: 10,
+              padding: 0,
+              textDecoration: "none",
+            }}
+          >
+            Ayurveda
+          </Button>
+          {/* </NavLink> */}
         </Toolbar>
       </AppBar>
     </>

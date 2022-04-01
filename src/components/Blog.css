@@ -46,7 +46,7 @@
 }
 
 .card-container {
-  width: 95%;
+  width: 120%;
   height: auto; /*380px
   /* background-color: red; */
   margin: 2rem;
@@ -68,13 +68,17 @@
 .card-container .img-container {
   width: 100%;
   height: 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .img-container img {
-  width: 100%;
-  height: 100%;
+  width: 95%;
+  height: 95%;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+  border-radius: 18px;
 }
 
 .card-container .text-container {
@@ -173,18 +177,6 @@ nav {
   cursor: default !important;
 }
 
-.pagination > .active > a {
-  background-color: #90d29d;
-  border-color: #90d29d;
-  color: black;
-  font-weight: 600;
-}
-.pagination > li > a {
-  border: 1px solid #90d29d;
-  padding: 5px 10px;
-  outline: none;
-  cursor: pointer;
-}
 .pagination > .active > a,
 .pagination > .active > span,
 .pagination > .active > a:hover,
@@ -194,16 +186,30 @@ nav {
   background-color: #90d29d;
   border-color: #90d29d;
   outline: none;
+  color: black;
+  font-weight: 600;
 }
 .pagination > li > a,
 .pagination > li > span {
   color: #90d29d;
+  border: 1px solid #90d29d;
+  padding: 5px 10px;
+  outline: none;
+  cursor: pointer;
+  margin-left: 5px;
+  margin-right: 5px;
+  outline: none;
+  color: black;
+  font-weight: 600;
+  border-radius: 50%;
+  padding: 6px 14px;
 }
 .pagination > li:first-child > a,
 .pagination > li:first-child > span,
 .pagination > li:last-child > a,
 .pagination > li:last-child > span {
-  border-radius: unset;
+  border-radius: 18px;
+  /* background-color: #90d29d; */
 }
 
 /* responsive style */
