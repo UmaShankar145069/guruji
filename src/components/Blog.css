@@ -186,7 +186,7 @@ nav {
   background-color: #90d29d;
   border-color: #90d29d;
   outline: none;
-  color: black;
+  color: #617566;
   font-weight: 600;
 }
 .pagination > li > a,
@@ -199,7 +199,7 @@ nav {
   margin-left: 5px;
   margin-right: 5px;
   outline: none;
-  color: black;
+  color: #617566;
   font-weight: 600;
   border-radius: 50%;
   padding: 6px 14px;

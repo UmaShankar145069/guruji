@@ -56,4 +56,10 @@ export const catogaryDropdown = [
     path: "./",
     cName: "submenu-item",
   },
+  {
+    id: 5,
+    title: "Body Care",
+    path: "./",
+    cName: "submenu-item",
+  },
 ];
