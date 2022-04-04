@@ -37,7 +37,8 @@
   transform: rotate(90deg);
   font-size: 1rem;
   font-weight: 900;
-  margin-left: -40px;
+  margin-left: -43px;
+  margin-top: 5px;
 }
 
 .nav-item a:hover {
@@ -233,8 +234,33 @@ nav {
 
   #nav-item a {
     font-size: 1.2rem;
-    margin-left: -40px;
     align-items: flex-start;
+  }
+
+  #nav-item a:nth-last-child(2) {
+    margin-left: -161px;
+  }
+
+  #nav-item a:nth-last-child(1) {
+    margin-left: -154px;
+  }
+
+  #nav-item a:first-child {
+    margin-left: -10px;
+  }
+}
+
+@media (max-width: 668px) {
+  #nav-item a:first-child {
+    margin-left: -40px;
+  }
+
+  #nav-item a:nth-last-child(1) {
+    margin-left: -30px;
+  }
+
+  #nav-item a:nth-last-child(2) {
+    margin-left: -10px;
   }
 }
 
@@ -245,6 +271,16 @@ nav {
     justify-content: center;
     align-items: center;
     margin-left: 25%;
+  }
+}
+
+@media (max-width: 506px) {
+  #nav-item a:first-child {
+    margin-left: -45px;
+  }
+
+  #nav-item a:nth-last-child(1) {
+    margin-right: -15px;
   }
 }
 

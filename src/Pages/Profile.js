@@ -109,6 +109,12 @@ const Profile = () => {
           <hr />
         </div>
       </div>
+
+      {/*Review section  */}
+      <div className="reviews">
+        <div className="user-reviews"></div>
+        <div></div>
+      </div>
     </>
   );
 };

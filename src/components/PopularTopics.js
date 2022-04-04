@@ -34,14 +34,14 @@ const PopularTopics = () => {
                     Title: <span className="text">{popular[i].title}</span>
                   </h4>
                   <h5>
-                    Date:{" "}
+                    Date:
                     <span className="text">
                       {new Date(popular[i].createdAt).toLocaleDateString()}
                     </span>
                   </h5>
                 </div>
                 <div className="pop-right">
-                  <img src={astro} />
+                  <img src={popular[i].image} />
                 </div>
               </div>
             </Link>

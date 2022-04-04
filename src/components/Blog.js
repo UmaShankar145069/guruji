@@ -116,42 +116,6 @@ const Blog = (props) => {
         </Typography>
         <nav className="blogNav">
           <ul id="nav-items" className="nav-items">
-            {/* {navItems.map((item) => {
-              if (item.title === "Catogary") {
-                return (
-                  <li
-                    key={item.id}
-                    className={item.cName}
-                    onClick={catgClick}
-                    // onMouseEnter={() => setCatgdown(true)}
-                    // onMouseLeave={() => setCatgdown(false)}
-                  >
-                    <Link to={item.path}>{item.title}</Link>
-                    <span>&gt;</span>
-                    {catgdown && <Dropdown />}
-                  </li>
-                );
-              } else if (item.title === "Tags") {
-                return (
-                  <li
-                    key={item.id}
-                    className={item.cName}
-                    onClick={tabClick}
-                    // onMouseEnter={() => setTabdown(true)}
-                    // onMouseLeave={() => setTabdown(false)}
-                  >
-                    <Link to={item.path}>{item.title}</Link>
-                    <span>&gt;</span>
-                    {tabdown && <Dropdown />}
-                  </li>
-                );
-              }
-              return (
-                <li key={item.id} className={item.cName} onClick={() => }>
-                  <Link to={item.path}>{item.title}</Link>
-                </li>
-              );
-            })} */}
             <li
               id="nav-item"
               className="nav-item"
@@ -168,12 +132,24 @@ const Blog = (props) => {
             </li>
             <li id="nav-item" className="nav-item" onClick={catgClick}>
               <Link to="/">Category</Link>
-              {/* <span>&gt;</span> */}
+              <span>
+                <img
+                  src="/images/down-arrow.png"
+                  alt="arrow-icon"
+                  style={{ width: 15, height: 15, transform: "rotate(-90deg)" }}
+                />
+              </span>
               {catgdown && <Dropdown onFilterItem={filterCatogary} />}
             </li>
             <li id="nav-item" className="nav-item" onClick={tabClick}>
               <Link to="/">Tabs</Link>
-              {/* <span>&gt;</span> */}
+              <span>
+                <img
+                  src="/images/down-arrow.png"
+                  alt="arrow-icon"
+                  style={{ width: 15, height: 15, transform: "rotate(-90deg)" }}
+                />
+              </span>
               {tabdown && <Dropdown onFilterItem={filterCatogary} />}
             </li>
           </ul>

@@ -1,6 +1,7 @@
 @font-face {
   font-family: saman;
   src: url("../Fonts/SAMAN__.TTF");
+  font-display: swap;
 }
 
 .footer-cont {

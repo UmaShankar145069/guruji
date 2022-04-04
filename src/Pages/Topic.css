@@ -19,11 +19,11 @@
 .popular-topic-cont h3 {
   font-size: 1.6rem;
   font-weight: bold;
+  text-align: center;
 }
 
 .popular-topic-cont .pop-card {
   width: 370px;
-  /* height: 120px; */
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -35,7 +35,6 @@
 
 .pop-card .pop-left {
   width: 60%;
-  /* height: 90px; */
 }
 
 .pop-left h4 {
@@ -79,6 +78,7 @@
 .blog-detail h1 {
   font-size: 2rem;
   font-weight: bolder;
+  text-align: center;
 }
 
 .blog-detail p {
@@ -195,4 +195,32 @@
   margin-left: 3rem;
   font-size: 1.5rem;
   margin-bottom: 2rem;
+}
+
+/* responsive design */
+@media (max-width: 840px) {
+  .main {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .popular-topic-cont {
+    order: 1;
+    width: 95%;
+  }
+
+  .blog-detail {
+    width: 95%;
+  }
+}
+
+@media (max-width: 450px) {
+  .blog-detail .blog-img {
+    width: 98%;
+  }
+
+  .blog-detail .btn {
+    width: 80%;
+  }
 }

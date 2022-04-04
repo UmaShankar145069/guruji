@@ -94,7 +94,6 @@ class Cards extends PureComponent {
               sx={{
                 padding: 10,
                 // background: "#E6F5E9",
-
                 margin: 1,
                 height: "auto",
                 marginBottom: -10,
