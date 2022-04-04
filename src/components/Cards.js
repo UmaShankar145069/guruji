@@ -1,10 +1,9 @@
 import React, { PureComponent } from "react";
 import ReactPaginate from "react-paginate";
 import { Container, Grid } from "@mui/material";
-import astro from "./images/astro.png";
 import { Link } from "react-router-dom";
 import { referData } from "../data";
-import axios from "axios";
+import { alignProperty } from "@mui/material/styles/cssUtils";
 
 class Cards extends PureComponent {
   constructor(props) {
@@ -74,8 +73,16 @@ class Cards extends PureComponent {
   render() {
     return (
       <>
-        {/* #E6F5E9 */}
-        <Grid container spacing={1} sx={{ backgroundColor: "#E6F5E9 " }}>
+        <Grid
+          container
+          spacing={3}
+          sx={{
+            backgroundColor: "#E6F5E9 ",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-evenly",
+          }}
+        >
           {this.state.tableData.map((tdata, i) => (
             <Grid
               key={i}
@@ -86,10 +93,10 @@ class Cards extends PureComponent {
               xl={3}
               sx={{
                 padding: 10,
-                background: "#E6F5E9",
-                // background: "red",
+                // background: "#E6F5E9",
+
                 margin: 1,
-                marginLeft: 10,
+                height: "auto",
                 marginBottom: -10,
               }}
             >
@@ -110,7 +117,7 @@ class Cards extends PureComponent {
                     </div>
                     <div className="bottom">
                       <h4>{this.state.tableData[i].title}</h4>
-                      <p>
+                      <p style={{ marginTop: 20 }}>
                         {this.state.tableData[i].description.substring(0, 50)}
                         ...
                       </p>
@@ -141,6 +148,7 @@ class Cards extends PureComponent {
             </Grid>
           ))}
         </Grid>
+
         {/* Pagination  */}
         <ReactPaginate
           previousLabel={"prev"}
