@@ -216,3 +216,79 @@ p {
   width: 100%;
   height: 100%;
 }
+
+/* reviews section */
+.reviews-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: yellow;
+}
+
+.reviews-container .user-reviews {
+  width: 50%;
+  height: 500px;
+  background-color: pink;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-x: scroll;
+  overscroll-behavior-y: ;
+}
+
+.reviews-container .user-reviews .review {
+  width: 95%;
+  height: 200px;
+  background-color: blue;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  border-radius: 50px;
+  margin-top: 55px;
+}
+
+.reviews-container .user-reviews .review .img-section {
+  width: 150px;
+  height: 100%;
+  background-color: aqua;
+}
+
+.reviews-container .user-reviews .review .user-img {
+  width: 150px;
+  height: 70%;
+  border-radius: 50%;
+  position: absolute;
+  top: -55px;
+}
+
+.reviews-container .user-reviews .review .user-review {
+  width: 73%;
+  height: 100%;
+  background-color: palegreen;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.reviews-container .user-reviews .review .user-review .review-date {
+  /* margin-top: -70px; */
+  margin-bottom: 20px;
+}
+
+.reviews-container .user-reviews .review .user-review .review-text {
+  margin-bottom: 80px;
+}
+
+.reviews-container .user-reviews .review .user-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.reviews-container .make-reviews {
+  width: 50%;
+  background-color: yellowgreen;
+}

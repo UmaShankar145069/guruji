@@ -1,4 +1,5 @@
 import React from "react";
+import RatingStars from "../components/RatingStars";
 import "./Profile.css";
 
 const Profile = () => {
@@ -100,10 +101,10 @@ const Profile = () => {
               <img src="/images/expert.png" alt="images" />
             </div>
             <div className="img">
-              <img src="/images/expert.png" alt="images" />
+              <img src="/images/expert.webp" alt="images" />
             </div>
             <div className="img">
-              <img src="/images/expert.png" alt="images" />
+              <img src="/images/expert.webp" alt="images" />
             </div>
           </div>
           <hr />
@@ -111,9 +112,64 @@ const Profile = () => {
       </div>
 
       {/*Review section  */}
-      <div className="reviews">
-        <div className="user-reviews"></div>
-        <div></div>
+      <div className="reviews-container">
+        <div className="user-reviews">
+          {/* review card */}
+          <div className="review">
+            <div className="img-section">
+              <div className="user-img">
+                <img src="/images/expert.webp" />
+              </div>
+            </div>
+            <div className="user-review">
+              <div className="rating">
+                <RatingStars />
+              </div>
+              <div className="review-date">DD/MM/YYYY</div>
+              <div className="review-text">
+                Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam
+                condimentum tempus diam.
+              </div>
+            </div>
+          </div>
+          {/* review card */}
+          <div className="review">
+            <div className="img-section">
+              <div className="user-img">
+                <img src="/images/expert.webp" />
+              </div>
+            </div>
+            <div className="user-review">
+              <div className="rating">
+                <RatingStars />
+              </div>
+              <div className="review-date">DD/MM/YYYY</div>
+              <div className="review-text">
+                Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam
+                condimentum tempus diam.
+              </div>
+            </div>
+          </div>
+          {/* review card */}
+          <div className="review">
+            <div className="img-section">
+              <div className="user-img">
+                <img src="/images/expert.webp" />
+              </div>
+            </div>
+            <div className="user-review">
+              <div className="rating">
+                <RatingStars />
+              </div>
+              <div className="review-date">DD/MM/YYYY</div>
+              <div className="review-text">
+                Lorem ipsum dolor sit amet, consec tetur adipiscing elit. Nam
+                condimentum tempus diam.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="make-reviews">lo</div>
       </div>
     </>
   );

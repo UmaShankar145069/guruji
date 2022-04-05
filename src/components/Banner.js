@@ -6,7 +6,7 @@ import "./Banner.css";
 const useStyles = makeStyles((theme) => ({
   // `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
   hero: {
-    backgroundImage: " url('./images/banner.jpg')",
+    backgroundImage: " url('./images/banner.webp')",
     height: "600px",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
@@ -26,6 +26,14 @@ const Banner = () => {
   return (
     <>
       <Box className={classes.hero}>
+        <div className="bannertext-container">
+          <h1>THE ULTIMATE AYURVEDIC DESTINATION FOR YOUR HEALTH</h1>
+          {/* <p>
+            We deal with various ayurvedic remedies and exercises to maintain
+            the balance between your hectic life and health. Ayurveda is the
+            ultimate prescription for a lifetime healthy body build.
+          </p> */}
+        </div>
         {/* <div className="bannertext-container">
           <div className="img-cont">
             <img src="./images/guruji.png" />

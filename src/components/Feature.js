@@ -72,7 +72,7 @@ const Feature = () => {
               >
                 <img
                   className={classes.fea}
-                  src="./images/shop.png"
+                  src="./images/shop.webp"
                   style={{ width: 220, height: 220, marginTop: 62 }}
                 />
               </Box>
@@ -85,7 +85,7 @@ const Feature = () => {
                 className={classes.round}
                 sx={{ boxShadow: "3px 4px 1px 1px rgba(0,0,0,0.3)" }}
               >
-                <img className={classes.fea} src="./images/consult.png" />
+                <img className={classes.fea} src="./images/consult.webp" />
               </Box>
               <Typography variant="h6">Consultancy</Typography>
             </Box>
@@ -96,7 +96,7 @@ const Feature = () => {
                 className={classes.round}
                 sx={{ boxShadow: "3px 4px 1px 1px rgba(0,0,0,0.3)" }}
               >
-                <img className={classes.fea} src="./images/live.png" />
+                <img className={classes.fea} src="./images/live.webp" />
               </Box>
               <Typography variant="h6">Live Session</Typography>
             </Box>
@@ -107,7 +107,7 @@ const Feature = () => {
                 className={classes.round}
                 sx={{ boxShadow: "3px 4px 1px 1px rgba(0,0,0,0.3)" }}
               >
-                <img className={classes.fea} src="./images/blog.png" />
+                <img className={classes.fea} src="./images/blog.webp" />
               </Box>
               <Typography variant="h6">Blog</Typography>
             </Box>

@@ -68,7 +68,7 @@ const Choose = () => {
                 className={classes.round}
                 sx={{ boxShadow: "3px 4px 1px 1px rgba(0,0,0,0.3)" }}
               >
-                <img className={classes.fea} src="./images/expert.png" />
+                <img className={classes.fea} src="./images/expert.webp" />
               </Box>
               <Typography variant="h6">Our Experts</Typography>
             </Box>
@@ -81,7 +81,7 @@ const Choose = () => {
               >
                 <img
                   className={classes.fea}
-                  src="./images/satisfied.png"
+                  src="./images/satisfied.webp"
                   style={{ width: 170, height: 170 }}
                 />
               </Box>
@@ -99,7 +99,7 @@ const Choose = () => {
               >
                 <img
                   className={classes.fea}
-                  src="./images/money-back.png"
+                  src="./images/money-back.webp"
                   style={{ width: 230, height: 230, marginTop: 65 }}
                 />
               </Box>
@@ -114,7 +114,7 @@ const Choose = () => {
               >
                 <img
                   className={classes.fea}
-                  src="./images/certified.png"
+                  src="./images/certified.webp"
                   style={{ width: 170, height: 170 }}
                 />
               </Box>

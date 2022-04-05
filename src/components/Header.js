@@ -32,7 +32,7 @@ const Header = () => {
           >
             <NavLink to="/">
               <img
-                src="/images/guruji.png"
+                src="/images/guruji.webp"
                 style={{ width: 120, height: 120, cursor: "pointer" }}
               />
             </NavLink>

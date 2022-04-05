@@ -134,7 +134,7 @@ const Blog = (props) => {
               <Link to="/">Category</Link>
               <span>
                 <img
-                  src="/images/down-arrow.png"
+                  src="/images/down-arrow.webp"
                   alt="arrow-icon"
                   style={{ width: 15, height: 15, transform: "rotate(-90deg)" }}
                 />
@@ -145,7 +145,7 @@ const Blog = (props) => {
               <Link to="/">Tabs</Link>
               <span>
                 <img
-                  src="/images/down-arrow.png"
+                  src="/images/down-arrow.webp"
                   alt="arrow-icon"
                   style={{ width: 15, height: 15, transform: "rotate(-90deg)" }}
                 />
