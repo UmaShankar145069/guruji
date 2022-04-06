@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Ayurveda.css";
+import { Helmet } from "react-helmet-async";
 
 const Ayurveda = () => {
   const [data, setData] = useState([]);
@@ -44,6 +45,12 @@ const Ayurveda = () => {
 
   return (
     <>
+      <Helmet>
+        <title>GurujiVeda</title>
+        <meta name="description" content="" />
+        <link rel="canonical" href="/ayurveda" />
+      </Helmet>
+
       <div className="ayurveda-container">
         <div className="search-filter-container">
           <div className="sort-container">

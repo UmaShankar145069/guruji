@@ -25,7 +25,7 @@ const Banner = () => {
   const classes = useStyles();
   return (
     <>
-      <Box className={classes.hero}>
+      <Box id="banner" className={classes.hero}>
         <div className="bannertext-container">
           <h1>THE ULTIMATE AYURVEDIC DESTINATION FOR YOUR HEALTH</h1>
           {/* <p>

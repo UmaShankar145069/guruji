@@ -1,10 +1,17 @@
 import React from "react";
 import "./AboutUs.css";
 import SwiperCard from "../components/SwiperCard";
+import { Helmet } from "react-helmet-async";
 
 const AboutUs = () => {
   return (
     <>
+      <Helmet>
+        <title>GurujiVeda</title>
+        <meta name="description" content="" />
+        <link rel="canonical" href="/about" />
+      </Helmet>
+
       {/* banner */}
       <div className="about-banner">
         <div className="left">

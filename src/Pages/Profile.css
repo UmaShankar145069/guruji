@@ -235,7 +235,6 @@ p {
   flex-direction: column;
   justify-content: space-between;
   overflow-x: scroll;
-  overscroll-behavior-y: ;
 }
 
 .reviews-container .user-reviews .review {
@@ -248,6 +247,7 @@ p {
   position: relative;
   border-radius: 50px;
   margin-top: 55px;
+  margin-bottom: 35px;
 }
 
 .reviews-container .user-reviews .review .img-section {
@@ -291,4 +291,26 @@ p {
 .reviews-container .make-reviews {
   width: 50%;
   background-color: yellowgreen;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.reviews-container .make-reviews .review-graph {
+  width: 350px;
+  height: 250px;
+}
+
+.reviews-container .make-reviews .review-graph img {
+  width: 350px;
+  height: 250px;
+}
+
+.reviews-container .make-reviews button {
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
+  font-size: 1rem;
+  font-weight: 600;
 }

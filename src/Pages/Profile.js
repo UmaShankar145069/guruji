@@ -1,10 +1,18 @@
 import React from "react";
 import RatingStars from "../components/RatingStars";
 import "./Profile.css";
+import { Helmet } from "react-helmet-async";
+import Modal from "../components/Modal";
 
 const Profile = () => {
   return (
     <>
+      <Helmet>
+        <title>GurujiVeda</title>
+        <meta name="description" content="" />
+        <link rel="canonical" href="/" />
+      </Helmet>
+
       <div className="profile-section">
         <div className="top">
           <div className="left">
@@ -114,6 +122,7 @@ const Profile = () => {
       {/*Review section  */}
       <div className="reviews-container">
         <div className="user-reviews">
+          <h3>Reviews</h3>
           {/* review card */}
           <div className="review">
             <div className="img-section">
@@ -169,7 +178,13 @@ const Profile = () => {
             </div>
           </div>
         </div>
-        <div className="make-reviews">lo</div>
+        <div className="make-reviews">
+          <div className="review-graph">
+            <img src="/images/review-image.webp" alt="review-graph" />
+          </div>
+          {/* <button>Make Reviews</button> */}
+          <Modal />
+        </div>
       </div>
     </>
   );

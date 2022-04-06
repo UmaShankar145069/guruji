@@ -7,6 +7,7 @@ import { referData } from "../data";
 import axios from "axios";
 import PopularTopics from "../components/PopularTopics";
 import ReactMarkdown from "react-markdown";
+import { Helmet } from "react-helmet-async";
 
 const Topic = (props) => {
   const [blog, setBlog] = useState();
@@ -36,7 +37,7 @@ const Topic = (props) => {
   };
 
   const handleLike = async () => {
-    const response = await axios.post(
+    const response = await axios.put(
       `https://3l41sc9lla.execute-api.ap-south-1.amazonaws.com/production/blog/${id}/like`
     );
     if (response.status === 200) {
@@ -48,6 +49,12 @@ const Topic = (props) => {
 
   return (
     <>
+      <Helmet>
+        <title>GurujiVeda</title>
+        <meta name="description" content="" />
+        <link rel="canonical" href={`/topic/${id}`} />
+      </Helmet>
+
       <div className="main">
         <PopularTopics />
         <div className="blog-detail">
