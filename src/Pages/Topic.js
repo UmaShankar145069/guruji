@@ -50,8 +50,11 @@ const Topic = (props) => {
   return (
     <>
       <Helmet>
-        <title>GurujiVeda</title>
-        <meta name="description" content="" />
+        <title>Single Blog</title>
+        <meta
+          name="description"
+          content="This page contains longform blogs for various ayurvedic treatments and recipes which will help you with better healthcare to lead a fruitful life ahead."
+        />
         <link rel="canonical" href={`/topic/${id}`} />
       </Helmet>
 

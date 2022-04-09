@@ -31,9 +31,9 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element={<Home card={5} />} />
+          <Route path="/" element={<Home card={6} />} />
           <Route path="/blog" element={<BlogPage card={12} />} />
-          <Route path="/topic/:id" element={<Topic card={4} />} />
+          <Route path="/topic/:id" element={<Topic card={3} />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/ayurveda" element={<Ayurveda />} />
           <Route path="/ayurveda/profile" element={<Profile />} />

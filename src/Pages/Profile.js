@@ -8,9 +8,12 @@ const Profile = () => {
   return (
     <>
       <Helmet>
-        <title>GurujiVeda</title>
-        <meta name="description" content="" />
-        <link rel="canonical" href="/" />
+        <title>Doctors Page</title>
+        <meta
+          name="description"
+          content="XXX is an authentic ayurveda clinic having treatment from different naturalistic and holistic approaches. A lot of people ask me about Ayurvedic treatment and ayurveda doctors. I have therapy in India and follow Indian methodologies of medicine. I must say here, good doctors can be found ."
+        />
+        <link rel="canonical" href="/profile" />
       </Helmet>
 
       <div className="profile-section">

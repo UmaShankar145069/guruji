@@ -24,7 +24,9 @@ const PopularTopics = () => {
   return (
     <>
       <div className="popular-topic-cont">
-        <h3>Popular topics</h3>
+        <div className="heading-cont">
+          <h3>Popular Topics</h3>
+        </div>
         {popular.length <= 3 &&
           popular.map((elem, i) => (
             <Link to={`/topic/${popular[i]._id}`} style={{ color: "black" }}>
@@ -46,6 +48,21 @@ const PopularTopics = () => {
               </div>
             </Link>
           ))}
+        {/* <div className="pop-card">
+          <div className="pop-left">
+            <h4>
+              Title: <span className="text"></span>
+            </h4>
+            <h5>
+              Date:
+              <span className="text"></span>
+            </h5>
+          </div>
+          <div className="pop-right">
+            <img src="" />
+          </div>
+        </div> */}
+        <div className="bottom"></div>
       </div>
     </>
   );

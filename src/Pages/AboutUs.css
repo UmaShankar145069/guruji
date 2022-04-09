@@ -1,12 +1,15 @@
 /* banner style */
 .about-banner {
   width: 100%;
+  height: 600px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  background-color: red;
-  padding: 25px 0;
-  margin-top: 75px;
+  /* background-color: red; */
+  background-image: url("../../public/images/banner.webp");
+  background-size: cover;
+  /* padding: 25px 0; */
+  margin-top: 219px;
 }
 
 .about-banner .left {
@@ -42,15 +45,23 @@
   padding: 60px 0;
 }
 
+.about-us-text h2 {
+  color: #34593e;
+  font-family: Poppins-Bold;
+  font-size: 2rem;
+}
+
 .about-us-text p {
   width: 90%;
   text-align: center;
+  color: #617566;
+  font-family: Poppins-SemiBold;
 }
 
 hr {
   width: 80%;
   height: 2px;
-  background-color: black;
+  background-color: #7ac184;
 }
 
 /* why choose */
@@ -62,8 +73,20 @@ hr {
   padding: 30px 0;
 }
 
+.about-choose h2 {
+  font-family: Poppins-Bold;
+  font-size: 2rem;
+  color: #548940;
+}
+
+.about-choose h3 {
+  color: #34593e;
+  font-family: Poppins-Medium;
+  font-size: 1.5rem;
+}
+
 .about-choose .img-container {
-  width: 80%;
+  width: 50%;
   background-color: red;
   display: flex;
   align-items: flex-start;
@@ -88,7 +111,7 @@ hr {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background-color: yellow;
+  background-color: #a9d8af;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -111,6 +134,9 @@ hr {
 
 .user-review-cont h2 {
   margin-top: 75px;
+  font-family: Poppins-Bold;
+  font-size: 2rem;
+  color: #548940;
 }
 
 .user-review-cont .review-cards-cont {
@@ -119,19 +145,24 @@ hr {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: url("../../public/images/review-background.jpg");
 }
 .user-review-cont .review-cards-cont .review-cards {
-  width: 80%;
+  width: 100%;
   height: 400px;
-  background-color: blue !important;
+  /* background-color: blue !important; */
 }
 
 .user-review-cont .review-cards-cont .review-text {
-  background-color: pink;
+  /* background-color: pink; */
   padding: 6px 16px;
-  border: 1px solid;
-  margin-top: 55px;
-  margin-bottom: 25px;
+  border: 2px solid #4f7858;
+  margin-top: 45px;
+  margin-bottom: 30px;
+  color: #34593e;
+  font-family: Poppins-SemiBold;
+  font-size: 1.2rem;
+  border-radius: 50px;
 }
 
 /* aboutus video */

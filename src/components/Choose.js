@@ -14,6 +14,9 @@ const useStyles = makeStyles((theme) => ({
   title: {
     paddingBottom: theme.spacing(3),
     textAlign: "center",
+    color: "#34593E",
+    fontFamily: "Poppins-Bold",
+    fontSize: "2.5rem",
   },
   round: {
     width: "150px",
@@ -41,6 +44,11 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     textAlign: "center",
+  },
+  text: {
+    color: "#34593E",
+    fontFamily: "Poppins-Medium",
+    fontSize: "1.5rem",
   },
 }));
 
@@ -70,7 +78,9 @@ const Choose = () => {
               >
                 <img className={classes.fea} src="./images/expert.webp" />
               </Box>
-              <Typography variant="h6">Our Experts</Typography>
+              <Typography variant="h6" className={classes.text}>
+                Our Experts
+              </Typography>
             </Box>
           </Grid>
           <Grid item xs={12} sm={6} md={3} className={classes.roundContainer}>
@@ -85,7 +95,9 @@ const Choose = () => {
                   style={{ width: 170, height: 170 }}
                 />
               </Box>
-              <Typography variant="h6">2 Million Satisfied Users</Typography>
+              <Typography variant="h6" className={classes.text}>
+                2 Million <br /> Satisfied Users
+              </Typography>
             </Box>
           </Grid>
           <Grid item xs={12} sm={6} md={3} className={classes.roundContainer}>
@@ -103,7 +115,9 @@ const Choose = () => {
                   style={{ width: 230, height: 230, marginTop: 65 }}
                 />
               </Box>
-              <Typography variant="h6">Money Back </Typography>
+              <Typography variant="h6" className={classes.text}>
+                Money Back
+              </Typography>
             </Box>
           </Grid>
           <Grid item xs={12} sm={6} md={3} className={classes.roundContainer}>
@@ -118,7 +132,9 @@ const Choose = () => {
                   style={{ width: 170, height: 170 }}
                 />
               </Box>
-              <Typography variant="h6">Certified Doctors</Typography>
+              <Typography variant="h6" className={classes.text}>
+                Certified Doctors
+              </Typography>
             </Box>
           </Grid>
         </Grid>

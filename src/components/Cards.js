@@ -136,7 +136,7 @@ class Cards extends PureComponent {
                     textAlign: "center",
                     marginLeft: 280,
                     padding: "6px 10px",
-                    color: "rgba(0, 0, 0, 0.7)",
+                    color: "#617566",
                     fontWeight: 600,
                     fontFamily: "sans-serif",
                   }}

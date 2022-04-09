@@ -3,6 +3,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { makeStyles } from "@mui/styles";
 import { Container } from "@mui/material";
+import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 
 const useStyles = makeStyles((theme) => ({
@@ -13,6 +14,9 @@ const useStyles = makeStyles((theme) => ({
   title: {
     paddingBottom: theme.spacing(3),
     textAlign: "center",
+    color: "#34593E",
+    fontFamily: "Poppins-Bold",
+    fontSize: "2.5rem",
   },
   round: {
     width: "150px",
@@ -40,6 +44,11 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     alignItems: "center",
     textAlign: "center",
+  },
+  text: {
+    color: "#34593E",
+    fontFamily: "Poppins-Medium",
+    fontSize: "1.5rem",
   },
 }));
 
@@ -76,7 +85,9 @@ const Feature = () => {
                   style={{ width: 220, height: 220, marginTop: 62 }}
                 />
               </Box>
-              <Typography variant="h6">Shop</Typography>
+              <Typography variant="h6" className={classes.text}>
+                Shop
+              </Typography>
             </Box>
           </Grid>
           <Grid item xs={12} sm={6} md={3} className={classes.roundContainer}>
@@ -87,7 +98,9 @@ const Feature = () => {
               >
                 <img className={classes.fea} src="./images/consult.webp" />
               </Box>
-              <Typography variant="h6">Consultancy</Typography>
+              <Typography variant="h6" className={classes.text}>
+                Consultancy
+              </Typography>
             </Box>
           </Grid>
           <Grid item xs={12} sm={6} md={3} className={classes.roundContainer}>
@@ -98,19 +111,25 @@ const Feature = () => {
               >
                 <img className={classes.fea} src="./images/live.webp" />
               </Box>
-              <Typography variant="h6">Live Session</Typography>
+              <Typography variant="h6" className={classes.text}>
+                Live Session
+              </Typography>
             </Box>
           </Grid>
           <Grid item xs={12} sm={6} md={3} className={classes.roundContainer}>
-            <Box className={classes.roundDiv}>
-              <Box
-                className={classes.round}
-                sx={{ boxShadow: "3px 4px 1px 1px rgba(0,0,0,0.3)" }}
-              >
-                <img className={classes.fea} src="./images/blog.webp" />
+            <Link to="/blog">
+              <Box className={classes.roundDiv}>
+                <Box
+                  className={classes.round}
+                  sx={{ boxShadow: "3px 4px 1px 1px rgba(0,0,0,0.3)" }}
+                >
+                  <img className={classes.fea} src="./images/blog.webp" />
+                </Box>
+                <Typography variant="h6" className={classes.text}>
+                  Blog
+                </Typography>
               </Box>
-              <Typography variant="h6">Blog</Typography>
-            </Box>
+            </Link>
           </Grid>
         </Grid>
       </Container>

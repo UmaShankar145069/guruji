@@ -31,6 +31,7 @@
   margin-right: 2rem;
   padding: 6px 16px;
   border-radius: 5px;
+  font-family: Poppins-SemiBold;
 }
 
 .nav-item span {
@@ -43,7 +44,7 @@
 
 .nav-item a:hover {
   background-color: #a7deb1;
-  color: black;
+  color: #34593e;
 }
 
 .card-container {
@@ -64,6 +65,11 @@
 .card-container:hover {
   background-color: #7ac88b;
   box-shadow: 0px 15px 30px 5px #7ac88b;
+}
+
+.card-container:hover .bottom h4,
+.card-container:hover .bottom p {
+  color: #e4ffe4;
 }
 
 .card-container .img-container {
@@ -104,6 +110,8 @@
 
 .text-container .top span {
   margin-top: 0.5rem;
+  color: #617566;
+  font-family: Poppins-SemiBold;
 }
 
 .text-container .bottom {
@@ -112,12 +120,18 @@
 }
 
 .bottom h4 {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   margin-top: 8px;
-  font-family: sans-serif;
-  font-weight: 800;
+  font-family: Poppins-Medium;
   font-style: normal;
   margin-bottom: -12px;
+  color: #617566;
+}
+
+.bottom p {
+  color: #617566;
+  font-family: Poppins-Medium;
+  font-size: 1rem;
 }
 
 #read-btn:hover {

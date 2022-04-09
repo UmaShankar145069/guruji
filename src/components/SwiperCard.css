@@ -18,10 +18,16 @@ body {
   /* background-color: red; */
 }
 
+.swiper-pagination .swiper-pagination-bullet {
+  padding: 5px;
+  margin-left: 15px !important;
+}
+
 .swiper-slide {
+  /* width: 357px !important; */
   text-align: center;
   font-size: 18px;
-  background: #fff;
+  /* background: #fff; */
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -46,35 +52,51 @@ body {
 }
 
 .review-card {
-  width: 200px;
-  height: 200px;
-  background-color: brown;
+  width: 283px;
+  height: 260px;
+  /* background-color: brown; */
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 30px 10px;
 }
 
+.review-card .swiper {
+  width: 98%;
+}
+
 .review-card .card {
-  width: 100%;
+  width: 400px !important;
   height: 100%;
-  background-color: pink;
+  background-color: #e3ffe3;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
+  border-radius: 18px;
+}
+
+.review-card .card:hover {
+  transform: scale(1.2);
+  box-shadow: -3px 3px 46px 24px #8bce8e;
+}
+
+.review-card .card .text {
+  width: 95%;
+  color: #617566;
+  font-family: Poppins-Medium;
 }
 
 .review-card .card .name-pic {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: red;
+  /* background-color: red; */
 }
 
 .review-card .card .name-pic .img {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   background-color: aqua;
   border-radius: 50%;
   margin-right: 7px;
@@ -84,7 +106,13 @@ body {
 }
 
 .review-card .card .name-pic .img img {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
+}
+
+.review-card .card .name-pic span {
+  color: #34593e;
+  font-family: Poppins-SemiBold;
+  font-size: 1.5rem;
 }

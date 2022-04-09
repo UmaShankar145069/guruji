@@ -7,14 +7,17 @@ const AboutUs = () => {
   return (
     <>
       <Helmet>
-        <title>GurujiVeda</title>
-        <meta name="description" content="" />
+        <title>About Us</title>
+        <meta
+          name="description"
+          content="This page follows up various blogs regarding ayurvedic remedies and treatment. Ayurveda is a trending term in healings and medical fields nowadays. The popularity of ayurveda is increasing. We also deal with astrology and have over millions of downloads on the play store as well. We made a small attempt to provide our readers with information on ayurveda as well so that they can benefit from it, ayurveda being a controversial topic. Follow us and keep supporting"
+        />
         <link rel="canonical" href="/about" />
       </Helmet>
 
       {/* banner */}
       <div className="about-banner">
-        <div className="left">
+        {/* <div className="left">
           <div className="top">
             <img src="" alt="image" />
           </div>
@@ -30,7 +33,7 @@ const AboutUs = () => {
         </div>
         <div className="right">
           <img src="" alt="image" />
-        </div>
+        </div> */}
       </div>
 
       {/* about us */}
@@ -54,27 +57,27 @@ const AboutUs = () => {
         <div className="img-container">
           <div className="cont top">
             <div className="img-cont">
-              <img src="" alt="image" />
+              <img src="/images/expert.webp" alt="image" />
             </div>
             <h3>1. Consultancy </h3>
           </div>
           <div className="cont top">
             <div className="img-cont">
-              <img src="" alt="image" />
+              <img src="/images/expert.webp" alt="image" />
             </div>
-            <h3>1. Consultancy </h3>
+            <h3>2. Consultancy </h3>
           </div>
           <div className="cont">
             <div className="img-cont">
-              <img src="" alt="image" />
+              <img src="/images/expert.webp" alt="image" />
             </div>
-            <h3>1. Consultancy </h3>
+            <h3>3. Consultancy </h3>
           </div>
           <div className="cont">
             <div className="img-cont">
-              <img src="" alt="image" />
+              <img src="/images/expert.webp" alt="image" />
             </div>
-            <h3>1. Consultancy </h3>
+            <h3>4. Consultancy </h3>
           </div>
         </div>
       </div>

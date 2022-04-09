@@ -6,8 +6,11 @@ const BlogPage = (props) => {
   return (
     <>
       <Helmet>
-        <title>GurujiVeda</title>
-        <meta name="description" content="" />
+        <title>Blog</title>
+        <meta
+          name="description"
+          content="Ayurvedic blogs are a fun and entertaining way to learn ayurveda on your own time. Check out our list of the best ayurvedic blogs to get started"
+        />
         <link rel="canonical" href="/blog" />
       </Helmet>
 

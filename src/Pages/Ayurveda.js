@@ -46,8 +46,11 @@ const Ayurveda = () => {
   return (
     <>
       <Helmet>
-        <title>GurujiVeda</title>
-        <meta name="description" content="" />
+        <title>Ayurveda</title>
+        <meta
+          name="description"
+          content="Ayurveda is a set of Indian traditional medicine, which is deeply rooted in Vedic tradition and Indian philosophy. Ayurvedic blogs which have a collection of articles on ayurveda, ayurvedic home remedies, ayurveda massages, ayurvedic beauty tips, diet, yoga and the benefits of yoga and spiritual healing alternatives"
+        />
         <link rel="canonical" href="/ayurveda" />
       </Helmet>
 

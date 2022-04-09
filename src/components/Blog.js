@@ -21,6 +21,9 @@ const useStyles = makeStyles((theme) => ({
   title: {
     paddingBottom: theme.spacing(3),
     textAlign: "center",
+    color: "#34593E",
+    fontFamily: "Poppins-Bold",
+    fontSize: "2.5rem",
   },
 }));
 
@@ -121,17 +124,17 @@ const Blog = (props) => {
               className="nav-item"
               onClick={() => loadBlogsData()}
             >
-              <Link to="/">Most Recent</Link>
+              <Link to="">Most Recent</Link>
             </li>
             <li
               id="nav-item"
               className="nav-item"
               onClick={() => loadPopularData()}
             >
-              <Link to="/">Popular</Link>
+              <Link to="">Popular</Link>
             </li>
             <li id="nav-item" className="nav-item" onClick={catgClick}>
-              <Link to="/">Category</Link>
+              <Link to="">Category</Link>
               <span>
                 <img
                   src="/images/down-arrow.webp"
@@ -142,9 +145,10 @@ const Blog = (props) => {
               {catgdown && <Dropdown onFilterItem={filterCatogary} />}
             </li>
             <li id="nav-item" className="nav-item" onClick={tabClick}>
-              <Link to="/">Tabs</Link>
+              <Link to="">Tabs</Link>
               <span>
                 <img
+                  type="image/webp"
                   src="/images/down-arrow.webp"
                   alt="arrow-icon"
                   style={{ width: 15, height: 15, transform: "rotate(-90deg)" }}
