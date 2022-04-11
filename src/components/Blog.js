@@ -137,7 +137,7 @@ const Blog = (props) => {
               <Link to="">Category</Link>
               <span>
                 <img
-                  src="/images/down-arrow.webp"
+                  src="/images/down-arrow.png"
                   alt="arrow-icon"
                   style={{ width: 15, height: 15, transform: "rotate(-90deg)" }}
                 />
@@ -149,7 +149,7 @@ const Blog = (props) => {
               <span>
                 <img
                   type="image/webp"
-                  src="/images/down-arrow.webp"
+                  src="/images/down-arrow.png"
                   alt="arrow-icon"
                   style={{ width: 15, height: 15, transform: "rotate(-90deg)" }}
                 />

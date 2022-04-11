@@ -6,7 +6,7 @@ import "./Banner.css";
 const useStyles = makeStyles((theme) => ({
   // `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
   hero: {
-    backgroundImage: " url('./images/banner.webp')",
+    backgroundImage: " url('./images/banner.jpg')",
     height: "600px",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",

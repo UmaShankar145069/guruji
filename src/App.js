@@ -9,6 +9,7 @@ import TagManager from "react-gtm-module";
 import ReactGA from "react-ga";
 import Ayurveda from "./Pages/Ayurveda";
 import Profile from "./Pages/Profile";
+import CommingSoon from "./Pages/CommingSoon";
 
 const TRACKING_ID = "G-90T8QCCP9J"; // YOUR_OWN_TRACKING_ID
 ReactGA.initialize(TRACKING_ID);
@@ -37,6 +38,7 @@ function App() {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/ayurveda" element={<Ayurveda />} />
           <Route path="/ayurveda/profile" element={<Profile />} />
+          <Route path="/comming-soon" element={<CommingSoon />} />
         </Routes>
         <Footer />
       </BrowserRouter>

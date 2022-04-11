@@ -71,50 +71,56 @@ const Feature = () => {
           sx={{ margin: "auto", width: "inherit" }}
         >
           <Grid item xs={12} sm={6} md={3} className={classes.roundContainer}>
-            <Box className={classes.roundDiv}>
-              <Box
-                className={classes.round}
-                sx={{
-                  // background: "#AEDFB7 !important",
-                  boxShadow: "0 15px 10px 10px rgba(125,125,125,0.3)",
-                }}
-              >
-                <img
-                  className={classes.fea}
-                  src="./images/shop.webp"
-                  style={{ width: 220, height: 220, marginTop: 62 }}
-                />
+            <Link to="/comming-soon">
+              <Box className={classes.roundDiv}>
+                <Box
+                  className={classes.round}
+                  sx={{
+                    // background: "#AEDFB7 !important",
+                    boxShadow: "0 15px 10px 10px rgba(125,125,125,0.3)",
+                  }}
+                >
+                  <img
+                    className={classes.fea}
+                    src="./images/shop.png"
+                    style={{ width: 220, height: 220, marginTop: 62 }}
+                  />
+                </Box>
+                <Typography variant="h6" className={classes.text}>
+                  Shop
+                </Typography>
               </Box>
-              <Typography variant="h6" className={classes.text}>
-                Shop
-              </Typography>
-            </Box>
+            </Link>
           </Grid>
           <Grid item xs={12} sm={6} md={3} className={classes.roundContainer}>
-            <Box className={classes.roundDiv}>
-              <Box
-                className={classes.round}
-                sx={{ boxShadow: "3px 4px 1px 1px rgba(0,0,0,0.3)" }}
-              >
-                <img className={classes.fea} src="./images/consult.webp" />
+            <Link to="/comming-soon">
+              <Box className={classes.roundDiv}>
+                <Box
+                  className={classes.round}
+                  sx={{ boxShadow: "3px 4px 1px 1px rgba(0,0,0,0.3)" }}
+                >
+                  <img className={classes.fea} src="./images/consult.png" />
+                </Box>
+                <Typography variant="h6" className={classes.text}>
+                  Consultancy
+                </Typography>
               </Box>
-              <Typography variant="h6" className={classes.text}>
-                Consultancy
-              </Typography>
-            </Box>
+            </Link>
           </Grid>
           <Grid item xs={12} sm={6} md={3} className={classes.roundContainer}>
-            <Box className={classes.roundDiv}>
-              <Box
-                className={classes.round}
-                sx={{ boxShadow: "3px 4px 1px 1px rgba(0,0,0,0.3)" }}
-              >
-                <img className={classes.fea} src="./images/live.webp" />
+            <Link to="/comming-soon">
+              <Box className={classes.roundDiv}>
+                <Box
+                  className={classes.round}
+                  sx={{ boxShadow: "3px 4px 1px 1px rgba(0,0,0,0.3)" }}
+                >
+                  <img className={classes.fea} src="./images/live.png" />
+                </Box>
+                <Typography variant="h6" className={classes.text}>
+                  Live Session
+                </Typography>
               </Box>
-              <Typography variant="h6" className={classes.text}>
-                Live Session
-              </Typography>
-            </Box>
+            </Link>
           </Grid>
           <Grid item xs={12} sm={6} md={3} className={classes.roundContainer}>
             <Link to="/blog">
@@ -123,7 +129,7 @@ const Feature = () => {
                   className={classes.round}
                   sx={{ boxShadow: "3px 4px 1px 1px rgba(0,0,0,0.3)" }}
                 >
-                  <img className={classes.fea} src="./images/blog.webp" />
+                  <img className={classes.fea} src="./images/blog.png" />
                 </Box>
                 <Typography variant="h6" className={classes.text}>
                   Blog

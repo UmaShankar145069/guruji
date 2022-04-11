@@ -15,9 +15,21 @@ const SwiperCard = () => {
   return (
     <>
       <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
-        slidesPerGroup={3}
+        // breakpoints={{
+        //   // when windows width is >= 640px
+        //   640: {
+        //     width: 640,
+        //     slidesPerView: 1,
+        //   },
+        //   // when windows width is >= 768
+        //   768: {
+        //     width: 768,
+        //     slidesPerView: 4,
+        //   },
+        // }}
+        slidesPerView={4}
+        spaceBetween={0}
+        slidesPerGroup={4}
         loop={true}
         loopFillGroupWithBlank={true}
         pagination={{ clickable: true }}
@@ -37,7 +49,7 @@ const SwiperCard = () => {
                 <div className="img">
                   <img src="/images/ayurveda-1.png" alt="image" />
                 </div>
-                <span>Jyoti ji's </span>
+                <span>Rahul Yadav</span>
               </div>
             </div>
           </div>
@@ -71,7 +83,7 @@ const SwiperCard = () => {
                 <div className="img">
                   <img src="/images/ayurveda-3.jpg" alt="image" />
                 </div>
-                <span>Mayang</span>
+                <span>Priya</span>
               </div>
             </div>
           </div>
@@ -105,7 +117,7 @@ const SwiperCard = () => {
                 <div className="img">
                   <img src="/images/ayurveda-5.png" alt="image" />
                 </div>
-                <span>Abhay Kumar</span>
+                <span>Priyanka</span>
               </div>
             </div>
           </div>

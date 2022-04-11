@@ -4,6 +4,7 @@ import Typography from "@mui/material/Typography";
 import { makeStyles } from "@mui/styles";
 import { Container } from "@mui/material";
 import Grid from "@mui/material/Grid";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -71,71 +72,79 @@ const Choose = () => {
           sx={{ margin: "auto", width: "inherit" }}
         >
           <Grid item xs={12} sm={6} md={3} className={classes.roundContainer}>
-            <Box className={classes.roundDiv}>
-              <Box
-                className={classes.round}
-                sx={{ boxShadow: "3px 4px 1px 1px rgba(0,0,0,0.3)" }}
-              >
-                <img className={classes.fea} src="./images/expert.webp" />
+            <Link to="/comming-soon">
+              <Box className={classes.roundDiv}>
+                <Box
+                  className={classes.round}
+                  sx={{ boxShadow: "3px 4px 1px 1px rgba(0,0,0,0.3)" }}
+                >
+                  <img className={classes.fea} src="./images/expert.png" />
+                </Box>
+                <Typography variant="h6" className={classes.text}>
+                  Our Experts
+                </Typography>
               </Box>
-              <Typography variant="h6" className={classes.text}>
-                Our Experts
-              </Typography>
-            </Box>
+            </Link>
           </Grid>
           <Grid item xs={12} sm={6} md={3} className={classes.roundContainer}>
-            <Box className={classes.roundDiv}>
-              <Box
-                className={classes.round}
-                sx={{ boxShadow: "3px 4px 1px 1px rgba(0,0,0,0.3)" }}
-              >
-                <img
-                  className={classes.fea}
-                  src="./images/satisfied.webp"
-                  style={{ width: 170, height: 170 }}
-                />
+            <Link to="/comming-soon">
+              <Box className={classes.roundDiv}>
+                <Box
+                  className={classes.round}
+                  sx={{ boxShadow: "3px 4px 1px 1px rgba(0,0,0,0.3)" }}
+                >
+                  <img
+                    className={classes.fea}
+                    src="./images/satisfied.png"
+                    style={{ width: 170, height: 170 }}
+                  />
+                </Box>
+                <Typography variant="h6" className={classes.text}>
+                  2 Million <br /> Satisfied Users
+                </Typography>
               </Box>
-              <Typography variant="h6" className={classes.text}>
-                2 Million <br /> Satisfied Users
-              </Typography>
-            </Box>
+            </Link>
           </Grid>
           <Grid item xs={12} sm={6} md={3} className={classes.roundContainer}>
-            <Box className={classes.roundDiv}>
-              <Box
-                className={classes.round}
-                sx={{
-                  // background: "#AEDFB7 !important",
-                  boxShadow: "0 15px 10px 10px rgba(125,125,125,0.3)",
-                }}
-              >
-                <img
-                  className={classes.fea}
-                  src="./images/money-back.webp"
-                  style={{ width: 230, height: 230, marginTop: 65 }}
-                />
+            <Link to="/comming-soon">
+              <Box className={classes.roundDiv}>
+                <Box
+                  className={classes.round}
+                  sx={{
+                    // background: "#AEDFB7 !important",
+                    boxShadow: "0 15px 10px 10px rgba(125,125,125,0.3)",
+                  }}
+                >
+                  <img
+                    className={classes.fea}
+                    src="./images/money-back.png"
+                    style={{ width: 230, height: 230, marginTop: 65 }}
+                  />
+                </Box>
+                <Typography variant="h6" className={classes.text}>
+                  Money Back
+                </Typography>
               </Box>
-              <Typography variant="h6" className={classes.text}>
-                Money Back
-              </Typography>
-            </Box>
+            </Link>
           </Grid>
           <Grid item xs={12} sm={6} md={3} className={classes.roundContainer}>
-            <Box className={classes.roundDiv}>
-              <Box
-                className={classes.round}
-                sx={{ boxShadow: "3px 4px 1px 1px rgba(0,0,0,0.3)" }}
-              >
-                <img
-                  className={classes.fea}
-                  src="./images/certified.webp"
-                  style={{ width: 170, height: 170 }}
-                />
+            <Link to="/comming-soon">
+              <Box className={classes.roundDiv}>
+                <Box
+                  className={classes.round}
+                  sx={{ boxShadow: "3px 4px 1px 1px rgba(0,0,0,0.3)" }}
+                >
+                  <img
+                    className={classes.fea}
+                    src="./images/certified.png"
+                    style={{ width: 170, height: 170 }}
+                  />
+                </Box>
+                <Typography variant="h6" className={classes.text}>
+                  Certified Doctors
+                </Typography>
               </Box>
-              <Typography variant="h6" className={classes.text}>
-                Certified Doctors
-              </Typography>
-            </Box>
+            </Link>
           </Grid>
         </Grid>
       </Container>

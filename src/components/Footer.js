@@ -17,7 +17,7 @@ const Footer = () => {
         <div className="footer-cont">
           <div className="footer-logo">
             <div className="logo-cont">
-              <img src="/images/logo.webp" />
+              <img src="/images/logo.png" />
             </div>
             <div className="title">Guruji Veda</div>
           </div>
