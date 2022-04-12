@@ -15,21 +15,38 @@ const SwiperCard = () => {
   return (
     <>
       <Swiper
-        // breakpoints={{
-        //   // when windows width is >= 640px
-        //   640: {
-        //     width: 640,
-        //     slidesPerView: 1,
-        //   },
-        //   // when windows width is >= 768
-        //   768: {
-        //     width: 768,
-        //     slidesPerView: 4,
-        //   },
-        // }}
-        slidesPerView={4}
-        spaceBetween={0}
-        slidesPerGroup={4}
+        breakpoints={{
+          // when windows width is >= 640px
+          640: {
+            width: 640,
+            slidesPerView: 1,
+          },
+          // when windows width is >= 683px
+          683: {
+            width: 683,
+            slidesPerView: 2,
+          },
+          // when windows width is >=1046px
+          1046: {
+            width: 1046,
+            slidesPerView: 3,
+          },
+          // when windows width is >= 1415px
+          1415: {
+            width: 1415,
+            slidesPerView: 4,
+          },
+          // when windows width is >= 1513px
+          1513: {
+            width: 1513,
+            slidesPerView: 4,
+            spaceBetween: 0,
+            slidesPerGroup: 4,
+          },
+        }}
+        // slidesPerView={4}
+        // spaceBetween={0}
+        // slidesPerGroup={4}
         loop={true}
         loopFillGroupWithBlank={true}
         pagination={{ clickable: true }}
@@ -122,111 +139,6 @@ const SwiperCard = () => {
             </div>
           </div>
         </SwiperSlide>
-        {/* <SwiperSlide>
-          <div className="review-card">
-            <div className="card">
-              <div className="text">
-                Lorem ipsum dolor sit amet, consec tetur adipiscing elit.
-              </div>
-              <div className="name-pic">
-                <div className="img">
-                  <img src="/images/ayurveda-1.png" alt="image" />
-                </div>
-                <span>Name</span>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="review-card">
-            <div className="card">
-              <div className="text">
-                Lorem ipsum dolor sit amet, consec tetur adipiscing elit.
-              </div>
-              <div className="name-pic">
-                <div className="img">
-                  <img src="/images/ayurveda-2.png" alt="image" />
-                </div>
-                <span>Name</span>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="review-card">
-            <div className="card">
-              <div className="text">
-                Lorem ipsum dolor sit amet, consec tetur adipiscing elit.
-              </div>
-              <div className="name-pic">
-                <div className="img">
-                  <img src="/images/ayuveda-3.png" alt="image" />
-                </div>
-                <span>Name</span>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="review-card">
-            <div className="card">
-              <div className="text">
-                Lorem ipsum dolor sit amet, consec tetur adipiscing elit.
-              </div>
-              <div className="name-pic">
-                <div className="img">
-                  <img src="/images/ayurveda-4.png" alt="image" />
-                </div>
-                <span>Name</span>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="review-card">
-            <div className="card">
-              <div className="text">
-                Lorem ipsum dolor sit amet, consec tetur adipiscing elit.
-              </div>
-              <div className="name-pic">
-                <div className="img">
-                  <img src="/images/ayurveda-5.png" alt="image" />
-                </div>
-                <span>Name</span>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="review-card">
-            <div className="card">
-              <div className="text">
-                Lorem ipsum dolor sit amet, consec tetur adipiscing elit.
-              </div>
-              <div className="name-pic">
-                <div className="img">
-                  <img src="/images/ayurveda-1.png" alt="image" />
-                </div>
-                <span>Name</span>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide>
-        <SwiperSlide>
-          <div className="review-card">
-            <div className="card">
-              <div className="text">
-                Lorem ipsum dolor sit amet, consec tetur adipiscing elit.
-              </div>
-              <div className="name-pic">
-                <div className="img">
-                  <img src="/images/ayurveda-2.png" alt="image" />
-                </div>
-                <span>Name</span>
-              </div>
-            </div>
-          </div>
-        </SwiperSlide> */}
       </Swiper>
     </>
   );

@@ -8,8 +8,20 @@ import axios from "axios";
 import PopularTopics from "../components/PopularTopics";
 import ReactMarkdown from "react-markdown";
 import { Helmet } from "react-helmet-async";
+import { useRef } from "react";
+import Comment from "../components/Comment";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import ChatBubbleIcon from "@mui/icons-material/ChatBubble";
+import TelegramIcon from "@mui/icons-material/Telegram";
+import BookmarkIcon from "@mui/icons-material/Bookmark";
 
 const Topic = (props) => {
+  const myRef = useRef(null);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+  const executeScroll = () => myRef.current.scrollIntoView();
+
   const [blog, setBlog] = useState();
   const [relatedPost, setRelatedPost] = useState([]);
   const { id } = useParams();
@@ -70,48 +82,65 @@ const Topic = (props) => {
           </ReactMarkdown>
 
           <div className="btn">
-            <button onClick={() => handleLike()}>Like</button>
-            <button>Comment</button>
-            <button>Share</button>
+            <button className="like-btn" onClick={() => handleLike()}>
+              <svg width={0} height={0}>
+                <linearGradient id="linearColors" x1={1} y1={0} x2={1} y2={1}>
+                  <stop offset={0} stopColor="rgba(191, 227, 195,1)" />
+                  <stop offset={1} stopColor="rgba(122, 193, 132,1)" />
+                </linearGradient>
+              </svg>
+              <FavoriteIcon
+                className="as"
+                sx={{ fill: "url(#linearColors)" }}
+              />
+            </button>
+
+            <button className="like-btn" onClick={() => executeScroll()}>
+              <svg width={0} height={0}>
+                <linearGradient id="linearColors" x1={1} y1={0} x2={1} y2={1}>
+                  <stop offset={0} stopColor="rgba(191, 227, 195,1)" />
+                  <stop offset={1} stopColor="rgba(122, 193, 132,1)" />
+                </linearGradient>
+              </svg>
+              <ChatBubbleIcon
+                className="as"
+                sx={{ fill: "url(#linearColors)" }}
+              />
+            </button>
+
+            <button className="like-btn" onClick={() => handleLike()}>
+              <svg width={0} height={0}>
+                <linearGradient id="linearColors" x1={1} y1={0} x2={1} y2={1}>
+                  <stop offset={0} stopColor="rgba(191, 227, 195,1)" />
+                  <stop offset={1} stopColor="rgba(122, 193, 132,1)" />
+                </linearGradient>
+              </svg>
+              <TelegramIcon
+                className="as"
+                sx={{ fill: "url(#linearColors)" }}
+              />
+            </button>
+
+            <button className="like-btn" onClick={() => handleLike()}>
+              <svg width={0} height={0}>
+                <linearGradient id="linearColors" x1={1} y1={0} x2={1} y2={1}>
+                  <stop offset={0} stopColor="rgba(191, 227, 195,1)" />
+                  <stop offset={1} stopColor="rgba(122, 193, 132,1)" />
+                </linearGradient>
+              </svg>
+              <BookmarkIcon
+                className="as"
+                sx={{ fill: "url(#linearColors)" }}
+              />
+            </button>
           </div>
         </div>
       </div>
 
       {/* comment section */}
-      <div className="comment-container">
-        <h3>Comments:</h3>
-        <div className="comment">
-          <div className="img-cont">
-            <div className="img">
-              <img src={astro} />
-            </div>
-          </div>
-          <div className="text-cont">
-            <h4>Name</h4>
-            <h5>2 days ago</h5>
-            <p>
-              Lorem ipsum dolor sit amet, consec te Lorem ipsum dolor sit amet,
-              consec te
-            </p>
-          </div>
-        </div>
-        <div className="comment">
-          <div className="img-cont">
-            <div className="img">
-              <img src={astro} />
-            </div>
-          </div>
-          <div className="text-cont">
-            <h4>Name</h4>
-            <h5>2 days ago</h5>
-            <p>
-              Lorem ipsum dolor sit amet, consec te Lorem ipsum dolor sit amet,
-              consec te
-            </p>
-          </div>
-        </div>
-      </div>
-
+      {blog && (
+        <Comment myRef={myRef} comments={blog.comments} id={blog && blog._id} />
+      )}
       {/* interesting topic section */}
       {relatedPost &&
         relatedPost.length > 0 &&

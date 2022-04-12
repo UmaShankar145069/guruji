@@ -76,7 +76,7 @@ const Ayurveda = () => {
           </div>
           <div className="filter-container">
             {/* Button trigger modal */}
-            <img src="./images/filter.webp" alt="filter-icon" />
+            <img src="./images/filter.png" alt="filter-icon" />
             <button
               type="button"
               class="btn btn-primary filter-btn"
@@ -87,7 +87,7 @@ const Ayurveda = () => {
             </button>
           </div>
           <div className="search-container">
-            <img src="./images/search.webp" alt="search-icon" />
+            <img src="./images/search.png" alt="search-icon" />
             <input
               type="text"
               placeholder="Search Doctor Name"

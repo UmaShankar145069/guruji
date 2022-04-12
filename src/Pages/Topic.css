@@ -132,20 +132,21 @@
 }
 
 .blog-detail .btn {
-  margin-top: 5rem;
-  width: 50%;
+  margin-top: 3.5rem;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+  gap: 1.5em;
 }
-
+/*
 .blog-detail .btn button {
   padding: 6px 16px;
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
   border-radius: 8px;
-}
+} */
 
 /* markdown style */
 .file img {
@@ -157,57 +158,164 @@
 
 /* comment section */
 
-.comment-container {
-  width: 95%;
+.comments-wrapper {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  align-items: center;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1rem;
+  width: 60%;
+}
+.comment-form input {
+  height: 20px;
+  padding: 0.5rem;
+}
+.comment-form textarea {
+  padding: 0.5rem;
+  min-height: 4rem;
+  margin-top: 0.5rem;
+}
+.comment-form input,
+.comment-form textarea {
+  border: 0;
+  outline: 0;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  transition: box-shadow 0.2s;
+}
+
+.comment-form button {
+  max-width: 50%;
+  transform: translateX(50%);
+  border: 0;
+  height: 3rem;
+  padding: 0.5rem;
+  box-shadow: 0 0 3px #c1e4c5;
+  border-radius: 15px;
+  margin-top: 0.5rem;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(
+    to right,
+    rgba(122, 193, 132, 1),
+    rgba(191, 227, 195, 1),
+    rgba(122, 193, 132, 1)
+  );
+  font-weight: 600;
+  /* color: ; */
+  transition: opacity 0.2s;
+}
+
+.comment-form button:hover {
+  opacity: 0.9;
+}
+
+.comment-form input:focus,
+.comment-form textarea:focus {
+  box-shadow: 0 0 5px rgba(122, 193, 132, 1);
+}
+
+.comment-container {
+  background-image: linear-gradient(
+    290deg,
+    #ffffff 2%,
+    rgba(122, 193, 132, 0.25)
+  );
+  border-radius: 1rem;
+  width: 95%;
+  display: grid;
+  grid-template-columns: 35% 1fr;
   margin: auto;
   margin-top: 35px;
-  border: 6px dashed black;
+  /* border: 6px dashed black; */
+  gap: 1em;
+  box-shadow: 0 0 10px rgba(191, 227, 195, 0.7);
+}
+.left {
+  padding: 5rem 0 2rem 2rem;
+}
+.left img {
+  max-width: 100%;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem 0.5rem;
 }
 
 .comment-container h3 {
-  padding: 0 12%;
+  font-weight: 500;
   font-size: 1.5rem;
 }
 
-.comment-container .comment {
-  width: 65%;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin: auto;
-  margin-bottom: 3rem;
+.commentor-name {
+  font-size: 1.5rem;
+  font-size: 600;
 }
 
+.comment-days,
+.comment-text {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.comment {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 0;
+}
+
+.comment .text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
 .comment .img,
 .comment img {
-  width: 70px;
-  height: 70px;
+  width: 40px;
+  height: 40px;
   margin: auto;
   border-radius: 50%;
 }
 
-.comment .text-cont {
-  margin-left: 1rem;
+button:hover {
+  cursor: pointer;
+}
+.btn button {
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, #e3ffe3, #e3ffe3);
+  height: 60px;
+  width: 59px;
+  box-shadow: 5px 5px 10px 3px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  text-align: center;
+  /* background-image: linear-gradient(to right, #FFFFFF, #7AC184); */
+  /* C1E4C5  BFE3C3 7AC184*/
+}
+.favIcon {
+  background: linear-gradient(to right, white, red);
 }
 
-.comment .text-cont h4 {
-  font-size: 1.4rem;
-  margin-top: 8px;
-  margin-bottom: 8px;
+.as {
+  font-size: 2.5rem !important;
 }
-
-.comment .text-cont h5 {
-  font-size: 1.1rem;
-  margin-top: 5px;
-  margin-bottom: 5px;
+.like-button,
+.as {
+  transition: 0.3s;
 }
-
-.comment .text-cont p {
-  margin-top: 8px;
-  font-size: 1.1rem;
+.like-btn:hover {
+  background-image: linear-gradient(to right, #c1e4c5, #7ac184);
+  /* box-shadow: ; */
+}
+.like-btn:hover .as {
+  fill: white;
 }
 
 /* interesting topic section */
@@ -245,6 +353,19 @@
 
   .blog-detail {
     width: 95%;
+  }
+
+  .comment-container {
+    grid-template-columns: auto;
+    grid-template-rows: 3rem 1fr;
+  }
+
+  .left {
+    opacity: 0.7;
+    z-index: -1;
+  }
+  .right {
+    padding: 0 1.5rem;
   }
 }
 

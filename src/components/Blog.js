@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
 const Blog = (props) => {
   const [items, setItems] = useState([]);
   const [catgdown, setCatgdown] = useState(false);
-  const [tabdown, setTabdown] = useState(false);
+  // const [tabdown, setTabdown] = useState(false);
   const classes = useStyles();
 
   useEffect(() => {
@@ -72,13 +72,13 @@ const Blog = (props) => {
     }
   }
 
-  function tabClick() {
-    if (tabdown === false) {
-      setTabdown(true);
-    } else {
-      setTabdown(false);
-    }
-  }
+  // function tabClick() {
+  //   if (tabdown === false) {
+  //     setTabdown(true);
+  //   } else {
+  //     setTabdown(false);
+  //   }
+  // }
 
   // filter item
 
@@ -144,7 +144,7 @@ const Blog = (props) => {
               </span>
               {catgdown && <Dropdown onFilterItem={filterCatogary} />}
             </li>
-            <li id="nav-item" className="nav-item" onClick={tabClick}>
+            {/* <li id="nav-item" className="nav-item" onClick={tabClick}>
               <Link to="">Tabs</Link>
               <span>
                 <img
@@ -155,7 +155,7 @@ const Blog = (props) => {
                 />
               </span>
               {tabdown && <Dropdown onFilterItem={filterCatogary} />}
-            </li>
+            </li> */}
           </ul>
         </nav>
         {/* cards */}

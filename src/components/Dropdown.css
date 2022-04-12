@@ -30,6 +30,7 @@
   text-decoration: none;
   color: white;
   padding: 16px;
+  /* background-color: red; */
 }
 
 /* .submenu-item:hover {
@@ -39,9 +40,20 @@
 @media (max-width: 800px) {
   .catogary-submenu {
     width: 10rem;
+    right: 5px;
   }
 
   #catogary-submenu li a {
     font-size: 1rem;
   }
+}
+
+@media (max-width: 669px) {
+  #nav-item .catogary-submenu li a:nth-last-child(1) {
+    margin-left: -10px;
+  }
+
+  /* .submenu-item {
+    padding: 5px;
+  } */
 }

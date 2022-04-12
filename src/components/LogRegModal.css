@@ -1,0 +1,69 @@
+.log-reg-container {
+  width: 90%;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.log-modal {
+  position: fixed;
+  z-index: 20;
+  background-color: #fff;
+  width: 50%;
+
+  /* center the modal */
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.log-modal .modal_header {
+  background: lawngreen;
+  font-size: 1rem;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.log-modal .modal_header .close-button {
+  border: none;
+  background: transparent;
+  margin-top: 6px !important;
+  margin-right: -2px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 36px !important;
+}
+
+.log-modal .modal_main {
+  padding: 20px;
+}
+
+.log-modal .modal_header .close-button:hover {
+  color: red;
+}
+
+.log-reg-container .button {
+  background: transparent;
+  border: none;
+  padding: 0px !important;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+.log-reg-container .button:hover {
+  color: #000;
+  background: transparent;
+}

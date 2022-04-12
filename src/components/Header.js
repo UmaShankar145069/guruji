@@ -7,6 +7,7 @@ import { NavLink } from "react-router-dom";
 import { Box } from "@mui/material";
 import astro from "./images/astro.png";
 import "./Header.css";
+import LogRegModal from "./LogRegModal";
 
 const Header = () => {
   return (
@@ -105,6 +106,21 @@ const Header = () => {
             Ayurveda
           </Button>
           {/* </NavLink> */}
+          <Box
+            className="head-btn"
+            id="contact-btn"
+            sx={{
+              color: "white",
+              textTransform: "capitalize",
+              fontSize: "1.2rem",
+              marginLeft: 2,
+              borderRadius: 10,
+              padding: 0,
+              textDecoration: "none",
+            }}
+          >
+            <LogRegModal />
+          </Box>
         </Toolbar>
       </AppBar>
     </>
