@@ -23,31 +23,39 @@
   width: 50%;
 
   /* center the modal */
-  top: 15%;
+  top: -1%;
   left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%);
 }
 
 .log-modal .modal_header {
   background: lawngreen;
   font-size: 1rem;
-  padding: 0px 20px;
+  padding: 0px;
   display: flex;
   justify-content: space-between;
+  position: relative;
+}
+
+.log-modal .react-tabs .tablist {
+  margin-top: -1px;
+  padding-left: 2px;
 }
 
 .log-modal .modal_header .close-button {
   border: none;
   background: transparent;
-  margin-top: 6px !important;
-  margin-right: -2px;
+  margin-top: 0px !important;
+  /* margin-right: -2px; */
   cursor: pointer;
-  color: #fff;
+  color: grey;
   font-size: 36px !important;
+  position: absolute;
+  right: 82px;
 }
 
 .log-modal .modal_main {
-  padding: 20px;
+  padding: 0px;
 }
 
 .log-modal .modal_header .close-button:hover {
@@ -66,4 +74,58 @@
 .log-reg-container .button:hover {
   color: #000;
   background: transparent;
+}
+
+/* style the tab */
+
+.tab {
+  overflow: hidden;
+}
+
+/* user register form style */
+
+.register {
+  box-sizing: border-box;
+}
+
+.register .container {
+  padding: 16px;
+  padding-top: 0px;
+  margin-top: -5px;
+  background-color: white;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="number"] {
+  width: 96%;
+  padding: 12px;
+  margin: 5px 0 10px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.registerbtn {
+  background-color: #04aa6d;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
 }
