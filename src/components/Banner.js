@@ -28,11 +28,13 @@ const Banner = () => {
       <Box id="banner" className={classes.hero}>
         <div className="bannertext-container">
           <h1>THE ULTIMATE AYURVEDIC DESTINATION FOR YOUR HEALTH</h1>
-          {/* <p>
-            We deal with various ayurvedic remedies and exercises to maintain
-            the balance between your hectic life and health. Ayurveda is the
-            ultimate prescription for a lifetime healthy body build.
-          </p> */}
+        </div>
+        <div className="social-icons">
+          <a href="https://www.instagram.com/guruji_veda/" target="_blank">
+            <div className="instagram-icon">
+              <img src="./images/instagram.png" />
+            </div>
+          </a>
         </div>
         {/* <div className="bannertext-container">
           <div className="img-cont">

@@ -56,47 +56,37 @@ const Ayurveda = () => {
 
       <div className="ayurveda-container">
         <div className="search-filter-container">
-          <div className="sort-container">
-            <select
-              className="sorting"
-              onChange={(e) => sortArray(e.target.value)}
-            >
-              <option selected disabled>
-                Sort By :
-              </option>
-              <option value="popularity">Popularit</option>
-              <option value="e_high_to_low">Experience : High to Low</option>
-              <option value="e_low_to_high">Experience : Low to High</option>
-              <option value="o_high_to_low">Total orders : High to Low</option>
-              <option value="o_low_to_high">Total orders : Low to High</option>
-              <option value="p_high_to_low">Price : High to Low</option>
-              <option value="p_low_to_high">Price : Low to High</option>
-              <option value="r_high_to_low">Rating : High to Low</option>
-            </select>
-          </div>
-          <div className="filter-container">
-            {/* Button trigger modal */}
-            <img src="./images/filter.png" alt="filter-icon" />
-            <button
-              type="button"
-              class="btn btn-primary filter-btn"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-            >
-              Filter
-            </button>
-          </div>
-          <div className="search-container">
-            <img src="./images/search.png" alt="search-icon" />
-            <input
-              type="text"
-              placeholder="Search Doctor Name"
-              onChange={(event) => {
-                setSearchTerm(event.target.value);
-              }}
-            />
+          <div className="container">
+            <div className="sort-container">
+              <button type="button" className="sort-btn">
+                Sort By
+              </button>
+            </div>
+            <div className="filter-container">
+              {/* Button trigger modal */}
+              {/* <img src="./images/filter.png" alt="filter-icon" /> */}
+              <button
+                type="button"
+                className="btn btn-primary filter-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Filter
+              </button>
+            </div>
+            <div className="search-container">
+              <img src="./images/search.png" alt="search-icon" />
+              <input
+                type="text"
+                placeholder="Search Doctor Name"
+                onChange={(event) => {
+                  setSearchTerm(event.target.value);
+                }}
+              />
+            </div>
           </div>
         </div>
+
         <div className="doc-profile-container">
           {data
             .filter((val) => {

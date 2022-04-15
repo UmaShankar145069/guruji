@@ -55,7 +55,7 @@ const LogRegModal = () => {
                       </TabList>
                       <TabPanel>
                         {/* <h1>Email Login User</h1> */}
-                        <form>
+                        <form className="login">
                           <div className="container">
                             <label for="email">Email ID</label>
                             <input
@@ -67,12 +67,51 @@ const LogRegModal = () => {
                             />
 
                             <label for="psw">Password</label>
-                            <input type="password" placeholder="Password" name="psw" className="psw" required />
+                            <input
+                              type="password"
+                              placeholder="Password"
+                              name="psw"
+                              className="psw"
+                              required
+                            />
+
+                            <input
+                              type="submit"
+                              value="Log In"
+                              className="registerbtn"
+                            />
                           </div>
                         </form>
                       </TabPanel>
                       <TabPanel>
-                        <h1>Phone LogIn User</h1>
+                        {/* <h1>Phone LogIn User</h1> */}
+                        <form className="login">
+                          <div className="container">
+                            <label for="phone">Mobile Number</label>
+                            <input
+                              type="tel"
+                              placeholder="Mobile Number"
+                              name="phone"
+                              className="phone"
+                              required
+                            />
+
+                            <label for="psw">Password</label>
+                            <input
+                              type="password"
+                              placeholder="Password"
+                              name="psw"
+                              className="psw"
+                              required
+                            />
+
+                            <input
+                              type="submit"
+                              value="Log In"
+                              className="registerbtn"
+                            />
+                          </div>
+                        </form>
                       </TabPanel>
                     </Tabs>
                   </TabPanel>
@@ -93,7 +132,7 @@ const LogRegModal = () => {
                               type="text"
                               placeholder="Full Name"
                               name="name"
-                              id="name"
+                              className="name"
                               required
                             />
 
@@ -102,7 +141,7 @@ const LogRegModal = () => {
                               type="text"
                               placeholder="Enter Email"
                               name="email"
-                              id="email"
+                              className="email"
                               required
                             />
 
@@ -111,7 +150,7 @@ const LogRegModal = () => {
                               type="tel"
                               placeholder="Mobile Number"
                               name="phone"
-                              id="phone"
+                              className="phone"
                               required
                             />
 
@@ -120,7 +159,7 @@ const LogRegModal = () => {
                               type="password"
                               placeholder="Enter Password"
                               name="psw"
-                              id="psw"
+                              className="psw"
                               required
                             />
 
@@ -129,7 +168,7 @@ const LogRegModal = () => {
                               type="password"
                               placeholder="Repeat Password"
                               name="psw-repeat"
-                              id="psw-repeat"
+                              className="psw-repeat"
                               required
                             />
 
@@ -142,9 +181,10 @@ const LogRegModal = () => {
                           </div>
                         </form>
 
-                        <div className="otp" ref={second}>
-                          liuuuu
-                        </div>
+                        <form className="otp" ref={second}>
+                          <h2>Enter Your OTP</h2>
+                          <div className="container"></div>
+                        </form>
                       </TabPanel>
                     </Tabs>
                   </TabPanel>
@@ -157,10 +197,63 @@ const LogRegModal = () => {
                         <Tab>Phone LogIn</Tab>
                       </TabList>
                       <TabPanel>
-                        <h1>Email Login Doctor</h1>
+                        {/* <h1>Email Login Doctor</h1> */}
+                        <form className="login">
+                          <div className="container">
+                            <label for="email">Email ID</label>
+                            <input
+                              type="text"
+                              placeholder="Email ID"
+                              name="email"
+                              className="email"
+                              required
+                            />
+
+                            <label for="psw">Password</label>
+                            <input
+                              type="password"
+                              placeholder="Password"
+                              name="psw"
+                              className="psw"
+                              required
+                            />
+
+                            <input
+                              type="submit"
+                              value="Log In"
+                              className="registerbtn"
+                            />
+                          </div>
+                        </form>
                       </TabPanel>
                       <TabPanel>
-                        <h1>Phone LogIn Doctor</h1>
+                        {/* <h1>Phone LogIn Doctor</h1> */}
+                        <form className="login">
+                          <div className="container">
+                            <label for="phone">Mobile Number</label>
+                            <input
+                              type="tel"
+                              placeholder="Mobile Number"
+                              name="phone"
+                              className="phone"
+                              required
+                            />
+
+                            <label for="psw">Password</label>
+                            <input
+                              type="password"
+                              placeholder="Password"
+                              name="psw"
+                              className="psw"
+                              required
+                            />
+                            <input
+                              type="submit"
+                              value="Log In"
+                              className="registerbtn"
+                            />
+                          </div>
+                        </form>
                       </TabPanel>
                     </Tabs>
                   </TabPanel>
@@ -180,7 +273,7 @@ const LogRegModal = () => {
                               type="text"
                               placeholder="Full Name"
                               name="name"
-                              id="name"
+                              className="name"
                               required
                             />
 
@@ -189,7 +282,7 @@ const LogRegModal = () => {
                               type="text"
                               placeholder="Enter Email"
                               name="email"
-                              id="email"
+                              className="email"
                               required
                             />
 
@@ -198,7 +291,7 @@ const LogRegModal = () => {
                               type="tel"
                               placeholder="Mobile Number"
                               name="phone"
-                              id="phone"
+                              className="phone"
                               required
                             />
 
@@ -207,7 +300,7 @@ const LogRegModal = () => {
                               type="password"
                               placeholder="Password"
                               name="psw"
-                              id="psw"
+                              className="psw"
                               required
                             />
 
@@ -216,7 +309,7 @@ const LogRegModal = () => {
                               type="password"
                               placeholder="Repeat Password"
                               name="psw-repeat"
-                              id="psw-repeat"
+                              className="psw-repeat"
                               required
                             />
 
@@ -225,7 +318,7 @@ const LogRegModal = () => {
                               type="number"
                               placeholder="Years of Experience"
                               name="exp"
-                              id="exp"
+                              className="exp"
                               min="5"
                               max="50"
                               required
@@ -236,14 +329,14 @@ const LogRegModal = () => {
                               type="text"
                               placeholder="Specialization"
                               name="spec"
-                              id="spec"
+                              className="spec"
                               required
                             />
 
                             <label for="degree">Submit Degree: </label>
                             <input
                               type="file"
-                              id="degree"
+                              className="degree"
                               name="degree"
                               multiple
                             />

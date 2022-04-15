@@ -26,6 +26,7 @@
   top: -1%;
   left: 50%;
   transform: translateX(-50%);
+  font-size: 1rem;
 }
 
 .log-modal .modal_header {
@@ -38,8 +39,24 @@
 }
 
 .log-modal .react-tabs .tablist {
-  margin-top: -1px;
+  margin-top: 1px;
   padding-left: 2px;
+  background-color: #38b038;
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+.log-modal .react-tabs__tab {
+  border: 1px solid #35ce35;
+}
+
+.log-modal .react-tabs__tab--selected {
+  background: #16e390;
+}
+
+.react-tabs__tab-list {
+  background: forestgreen;
+  color: #fff;
 }
 
 .log-modal .modal_header .close-button {
@@ -88,10 +105,11 @@
   box-sizing: border-box;
 }
 
-.register .container {
+.register .container,
+.login .container {
   padding: 16px;
   padding-top: 0px;
-  margin-top: -5px;
+  margin-top: 5px;
   background-color: white;
 }
 

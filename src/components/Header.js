@@ -106,7 +106,7 @@ const Header = () => {
             Ayurveda
           </Button>
           {/* </NavLink> */}
-          <Box
+          {/* <Box
             className="head-btn"
             id="contact-btn"
             sx={{
@@ -120,7 +120,7 @@ const Header = () => {
             }}
           >
             <LogRegModal />
-          </Box>
+          </Box> */}
         </Toolbar>
       </AppBar>
     </>
