@@ -104,7 +104,7 @@ const Ayurveda = () => {
                 <div className="top">
                   <div className="left">
                     <div className="img-cont">
-                      <img src="./images/expert.webp" alt="image" />
+                      <img src="./images/expert.png" alt="image" />
                     </div>
                     <div className="rating">4.5</div>
                   </div>
@@ -130,9 +130,16 @@ const Ayurveda = () => {
             <div className="top">
               <div className="left">
                 <div className="img-cont">
-                  <img src="./images/expert.webp" alt="image" />
+                  <img src="./images/expert.png" alt="image" />
                 </div>
                 <div className="rating">4.5</div>
+                <div className="star-img">
+                  <img src="./images/star.png" alt="star-icon" />
+                  <img src="./images/star.png" alt="star-icon" />
+                  <img src="./images/star.png" alt="star-icon" />
+                  <img src="./images/star.png" alt="star-icon" />
+                  <img src="./images/star.png" alt="star-icon" />
+                </div>
               </div>
               <div className="right">
                 <h3>Name</h3>
@@ -156,9 +163,16 @@ const Ayurveda = () => {
             <div className="top">
               <div className="left">
                 <div className="img-cont">
-                  <img src="./images/expert.webp" alt="image" />
+                  <img src="./images/expert.png" alt="image" />
                 </div>
                 <div className="rating">4.5</div>
+                <div className="star-img">
+                  <img src="./images/star.png" alt="star-icon" />
+                  <img src="./images/star.png" alt="star-icon" />
+                  <img src="./images/star.png" alt="star-icon" />
+                  <img src="./images/star.png" alt="star-icon" />
+                  <img src="./images/star.png" alt="star-icon" />
+                </div>
               </div>
               <div className="right">
                 <h3>Name</h3>
@@ -180,9 +194,16 @@ const Ayurveda = () => {
             <div className="top">
               <div className="left">
                 <div className="img-cont">
-                  <img src="./images/expert.webp" alt="image" />
+                  <img src="./images/expert.png" alt="image" />
                 </div>
                 <div className="rating">4.5</div>
+                <div className="star-img">
+                  <img src="./images/star.png" alt="star-icon" />
+                  <img src="./images/star.png" alt="star-icon" />
+                  <img src="./images/star.png" alt="star-icon" />
+                  <img src="./images/star.png" alt="star-icon" />
+                  <img src="./images/star.png" alt="star-icon" />
+                </div>
               </div>
               <div className="right">
                 <h3>Name</h3>
