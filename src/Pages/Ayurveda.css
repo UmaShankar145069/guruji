@@ -10,6 +10,54 @@
   margin-bottom: 160px;
 }
 
+.ayurveda-container .banner-img {
+  width: 100%;
+  height: 380px;
+  margin-top: -65px;
+  margin-bottom: -110px;
+  background: url("../../public/images/doctors-profile-banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* responsive style for banner */
+
+@media (max-width: 1181px) {
+  .ayurveda-container .banner-img {
+    margin-top: -130px;
+    background-size: contain;
+  }
+}
+
+@media (max-width: 940px) {
+  .ayurveda-container .banner-img {
+    margin-top: -150px;
+  }
+}
+
+@media (max-width: 740px) {
+  .ayurveda-container .banner-img {
+    margin-top: -180px;
+    margin-bottom: -110px;
+  }
+}
+
+@media (max-width: 450px) {
+  .ayurveda-container .banner-img {
+    margin-top: -210px;
+    margin-bottom: -230px;
+  }
+
+  .ayurveda-container .search-filter-container {
+    width: 100% !important;
+  }
+
+  .ayurveda-container .search-filter-container .container {
+    width: 100%;
+  }
+}
+
 .ayurveda-container .search-filter-container {
   width: 93%;
   height: 150px;
@@ -21,11 +69,12 @@
 }
 
 .ayurveda-container .search-filter-container .container {
-  width: 35%;
+  width: 450px;
   height: 60%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* background-color: red; */
 }
 
 /* sort style */
@@ -34,6 +83,7 @@
   height: 40px;
   background-color: aqua;
   border-radius: 50px;
+  z-index: 10;
 }
 
 .ayurveda-container .search-filter-container .sort-container .sort-btn {
@@ -51,6 +101,121 @@
 .ayurveda-container .search-filter-container .sort-container .sort-btn:hover {
   background-color: #a7daaa;
   color: #fff;
+}
+
+.ayurveda-container
+  .search-filter-container
+  .sort-container
+  .sort-items-container,
+.ayurveda-container
+  .search-filter-container
+  .filter-container
+  .filter-items-container {
+  width: 300px;
+  padding: 12px;
+  background-color: #7abc80;
+  border-radius: 26px;
+  cursor: pointer;
+}
+
+.ayurveda-container
+  .search-filter-container
+  .sort-container
+  .sort-items-container
+  h3,
+.ayurveda-container
+  .search-filter-container
+  .filter-container
+  .filter-items-container
+  h3 {
+  margin-left: 15px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  color: #1a3f23;
+  font-family: Poppins-SemiBold;
+  font-size: 1.3rem;
+}
+
+.ayurveda-container
+  .search-filter-container
+  .sort-container
+  .sort-items-container
+  hr,
+.ayurveda-container
+  .search-filter-container
+  .filter-container
+  .filter-items-container
+  hr {
+  width: 100%;
+  background-color: #fff;
+  height: 0.5px;
+}
+
+.ayurveda-container
+  .search-filter-container
+  .sort-container
+  .sort-items-container
+  ul,
+.ayurveda-container
+  .search-filter-container
+  .filter-container
+  .filter-items-container
+  ul {
+  list-style: none;
+  padding: 0px 20px;
+}
+.ayurveda-container
+  .search-filter-container
+  .sort-container
+  .sort-items-container
+  ul
+  li,
+.ayurveda-container
+  .search-filter-container
+  .filter-container
+  .filter-items-container
+  ul
+  li {
+  padding: 10px 0;
+  color: #1a3f23;
+  font-family: Poppins-Medium;
+  font-size: 1.1rem;
+  margin-top: -1px;
+}
+
+.ayurveda-container
+  .search-filter-container
+  .sort-container
+  .sort-items-container
+  label,
+.ayurveda-container
+  .search-filter-container
+  .filter-container
+  .filter-items-container
+  label {
+  cursor: pointer;
+}
+
+.ayurveda-container
+  .search-filter-container
+  .sort-container
+  .sort-items-container
+  ul
+  li
+  input[type="checkbox"],
+.ayurveda-container
+  .search-filter-container
+  .filter-container
+  .filter-items-container
+  ul
+  li
+  input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  clip-path: circle(46% at 50% 50%);
+  cursor: pointer;
+  margin-right: 10px;
+  margin-top: 2px;
 }
 
 /* filter container */
@@ -120,6 +285,7 @@
   outline: none;
   margin-top: 0px;
   font-family: Poppins-Medium;
+  box-shadow: 2px 2px 2px grey inset;
 }
 
 /* doctors profile cards */
@@ -130,7 +296,7 @@
   /* background-color: yellow; */
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -148,7 +314,15 @@
 }
 
 .ayurveda-container .doc-profile-container .card:hover {
-  background-color: linear-gradient(#7abc80, #7abc80);
+  background: linear-gradient(45deg, #7abc80, #7abc80);
+  cursor: pointer;
+}
+
+.ayurveda-container .doc-profile-container .card:hover .top .right h3,
+.ayurveda-container .doc-profile-container .card:hover .top .left .rating,
+.ayurveda-container .doc-profile-container .card:hover .top .right h4,
+.ayurveda-container .doc-profile-container .card:hover .bottom .exp {
+  color: rgb(255, 255, 255, 0.8);
 }
 
 .ayurveda-container .doc-profile-container .card .top {
